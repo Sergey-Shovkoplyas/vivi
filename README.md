@@ -1,8 +1,7 @@
-# Start template
+# Vivi
 
-Start template with (optional)
+Start template with 
 - normalize.css
-- bootstrap-grid.min.css
 - jquery-3.4.1.min.js
 
 Usage 
