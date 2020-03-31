@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 
-	<title>Start template</title>
+	<title>Vivi home</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,33 +15,78 @@
 	<link rel="icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
 	<!-- Template Basic Images End -->
-	
+
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
 
-	<!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
+
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
+
 <body>
 
-	<section class="section-first">
+	<header class="header">
 		<div class="container">
-			First-section
+			<div class="header__row">
+				<a href="#" class="header__logo"><img src="img/logo.png" alt="Vivi"></a>
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Collections</a></li>
+						<li><a class="active" href="#">Girl</a></li>
+						<li><a href="#">Boy</a></li>
+						<li><a href="#">Women</a></li>
+						<li><a href="#">uniformi scolar</a></li>
+						<li><a href="#">b2b</a></li>
+					</ul>
+				</nav>
+				<div class="header__user-block">
+					<a href="#" class="header__search"><img src="img/icon-search.svg" alt="search"></a>
+					<a href="#" class="header__user"><img src="img/icon-user.svg" alt="search"></a>
+					<a href="#" class="header__bag"><img src="img/icon-bag.svg" alt="search"></a>
+				</div>
+			</div>
 		</div>
+	</header>
+	<section class="home__welcome">
+		<div class="home__welcome-row container">
+			<div class="home__welcome-left">
+				<h1 class="home__welcome-title">Welcome to vivi online store</h1>
+				<p class="home__welcome-text">Geci, cămăși, bluze, pulovere, fuste, pantaloni, blugi sau accesorii pentru fete. Returnare online sau la magazin rapidă, simplă și gratuită.</p>
+				<div class="home__welcome-number">
+					<span>03</span>
+					<span>06</span>
+				</div>
+			</div>
+			<div class="home__welcome-right">
+				<div class="home__welcome-view">
+					<a href="#" class="view view--black">
+						<span class="view__text">View collection</span>
+					</a>
+				</div>
+				<div class="home__welcome-img"><img src="img/home/welcome-img.jpg" alt="Vivi"></div>
+				<div class="home__welcome-product">Babydoll-Kleid mit Tupfenprint</div>
+				<div class="home__welcome-price">
+					<span class="home__welcome-full">$85</span>
+					<span class="home__welcome-sale">$67</span>
+				</div>
+				<div class="home__welcome-buttons">
+					<a class="button" href="#">More about</a>
+					<a class="button button--fill-white" href="#">Checkout</a>
+				</div>
+		</div>
+		</div>	
 	</section>
 
-	<section class="section-second">
-		<div class="container">
-			Second-section
-		</div>
-	</section>
 
-	
-	<!-- <script src="js/jquery-3.4.1.min.js"></script> -->
-	<script src="js/common.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
+
 </html>

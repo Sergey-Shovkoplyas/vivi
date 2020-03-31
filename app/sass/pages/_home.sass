@@ -1,0 +1,94 @@
+.home__welcome
+  padding: 230px 0px 50px
+  background: #000 url('../img/home/welcome-bg.jpg') no-repeat center top
+  background-size: cover
+
+  
+.home__welcome-row 
+  display: flex
+  justify-content: space-between
+  max-width: 1140px
+  color: #fff
+
+.home__welcome-left 
+  width: 610px
+
+.home__welcome-title 
+  margin: 0
+  margin-bottom: 38px
+  font-family: $font-serif
+  font-size: 75px 
+  font-weight: 600
+  text-transform: uppercase
+
+.home__welcome-text
+  width: 284px
+  margin: 0
+  margin-bottom: 80px
+  font-size: 16px 
+  line-height: 1.5
+
+.home__welcome-number
+  position: relative
+  width: 160px
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4)
+  &::after 
+    content: ''
+    position: absolute
+    bottom: -1px
+    left: 0
+    width: 80px 
+    height: 1px
+    background-color: #fff
+  span 
+    position: absolute
+    &:first-child 
+      top: -25px 
+      left: 0
+      font-weight: 700
+    &:last-child 
+      top: 12px 
+      right: 0
+      font-weight: 300
+
+.home__welcome-right
+  position: relative
+  width: 350px
+
+.home__welcome-view
+  position: absolute
+  top: 120px 
+  left: -190px 
+
+.home__welcome-img 
+  margin-bottom: 8px
+
+.home__welcome-product 
+  margin-bottom: 14px
+  font-size: 20px
+  line-height: 1.2
+
+.home__welcome-price
+  display: flex
+  justify-content: space-between
+  padding-bottom: 20px
+  margin-bottom: 20px
+  border-bottom: 1px solid #fff
+  font-size: 20px
+  line-height: 1.2
+  font-weight: 700
+
+.home__welcome-full 
+  position: relative
+  display: block
+  &::before 
+    content: ''
+    position: absolute
+    top: 14px
+    left: 0
+    right: 0
+    height: 1px
+    background-color: #fff
+
+.home__welcome-buttons 
+  display: flex

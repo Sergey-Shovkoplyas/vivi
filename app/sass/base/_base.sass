@@ -1,18 +1,23 @@
+*
+  box-sizing: border-box
+  
 body 
   min-width: 320px
-  font-family: "Arial", sans-serif
-  font-size: 18px
+  font-family: $font-sans
+  font-size: 16px
   line-height: 1.2
 
-.row 
-  display: flex
-  flex-wrap: wrap
-  margin: 0 -15px
+a
+  text-decoration: none
+
   
 .container
-  max-width: 1200px
+  // outline: 1px solid green
+  max-width: 1840px
   margin: 0 auto
   padding: 0 15px
+  +media-1920 
+    max-width: 1200px
   +media-lg
     max-width: 960px
   +media-md
