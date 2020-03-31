@@ -5,9 +5,7 @@
   width: 250px
   height: 250px
   border: 1px solid #fff
-  border-radius: 50%
-
-.view.view--black 
+  border-radius: 50%    
   &::after 
     content: ''
     position: absolute
@@ -15,7 +13,16 @@
     left: -50px
     width: 356px
     height: 85px
-    background-image: url('../img/view-black.svg')
+    background: url('../img/view-black.svg') no-repeat center
+    background-size: contain
+  +media-sm 
+    width: 150px
+    height: 150px
+    padding: 30px 20px
+    &::after 
+      bottom: 5px
+      left: -22px
+      width: 190px
 
 .view__text 
   position: relative
@@ -33,5 +40,24 @@
     right: -4px
     width: 30px 
     height: 18px
-    background-image: url('../img/Line.svg')
+    background: url('../img/Line.svg') no-repeat center
+    background-size: contain
+  +media-sm 
+    width: auto
+    font-size: 15px
+    &::before
+      top: 0px
+      right: 27px
 
+.view.view--princess 
+  border-color: #000
+  &::after 
+    left: -61px
+    background: url('../img/view-princess.svg') no-repeat center
+    background-size: contain
+    +media-sm 
+      left: -24px
+  .view__text 
+    color: #000
+    &::before
+      background: url('../img/Line-black.svg') no-repeat center

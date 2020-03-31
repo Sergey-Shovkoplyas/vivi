@@ -2,16 +2,26 @@
   padding: 230px 0px 50px
   background: #000 url('../img/home/welcome-bg.jpg') no-repeat center top
   background-size: cover
+  +media-md 
+    padding: 150px 0px 50px
+  +media-sm
+    padding: 50px 0px 50px
 
-  
 .home__welcome-row 
   display: flex
   justify-content: space-between
   max-width: 1140px
   color: #fff
+  +media-md 
+    flex-direction: column 
+    align-items: center
 
 .home__welcome-left 
   width: 610px
+  +media-md 
+    margin-bottom: 60px
+  +media-sm 
+    width: auto
 
 .home__welcome-title 
   margin: 0
@@ -20,6 +30,11 @@
   font-size: 75px 
   font-weight: 600
   text-transform: uppercase
+  +media-md 
+    font-size: 70px
+  +media-sm
+    margin-bottom: 20px
+    font-size: 36px
 
 .home__welcome-text
   width: 284px
@@ -27,6 +42,8 @@
   margin-bottom: 80px
   font-size: 16px 
   line-height: 1.5
+  +media-sm
+    margin-bottom: 40px
 
 .home__welcome-number
   position: relative
@@ -54,11 +71,18 @@
 .home__welcome-right
   position: relative
   width: 350px
+  +media-sm 
+    width: auto
 
 .home__welcome-view
   position: absolute
   top: 120px 
   left: -190px 
+  +media-md 
+    left: -150px
+  +media-sm 
+    top: 210px
+    left: 10px
 
 .home__welcome-img 
   margin-bottom: 8px
@@ -92,3 +116,127 @@
 
 .home__welcome-buttons 
   display: flex
+
+// ------------------------------ home__collections --------------------------------
+
+
+.home__collections 
+  padding-top: 264px
+  padding-bottom: 170px
+  background-color: #EDEDED
+  +media-md 
+    padding-top: 150px
+  +media-sm 
+    overflow: hidden
+    padding-top: 50px
+
+.home__collections-title 
+  margin-bottom: 50px
+  +media-sm 
+    margin-bottom: 30px
+  
+
+.home__collections-text
+  display: block
+  margin-bottom: 30px
+  font-size: 14px
+  line-height: 1.2
+  color: #000
+  font-weight: 500
+  text-transform: uppercase
+  +media-md 
+    text-align: center
+
+.home__collections-slider
+  position: relative
+  margin: 0 -25px
+  margin-top: -125px
+  .slick-arrow 
+    bottom: 32px
+  .slick-next 
+    right: 50px
+  .slick-prev
+    right: 119px
+  +media-sm 
+    .slick-arrow
+      bottom: 58%
+    .slick-next 
+      right: 65px
+    .slick-prev
+      right: auto
+      left: 43px
+
+
+.home__collections-item 
+  padding: 125px 25px 0px
+
+.home__card 
+  position: relative
+  width: 415px
+  +media-1920
+    width: 260px
+  +media-lg
+    width: 240px
+  +media-md
+    width: 330px
+    margin: 0 auto
+
+.home__card-img 
+  width: 100%
+  margin-bottom: 21px
+
+.home__card-title
+  margin: 0
+  margin-bottom: 10px
+  text-align: center
+  font-size: 16px 
+  font-weight: 400
+
+.home__card-price 
+  display: block
+  text-align: center
+  font-size: 16px 
+  font-weight: 700
+
+.home__card-like 
+  position: absolute
+  top: 15px
+  right: 15px
+  width: 45px
+  height: 45px
+  border-radius: 50%
+  background: #fff url('../img/home/card-like.svg') no-repeat center
+
+.home__card-wide 
+  width: 880px
+  position: relative
+  +media-1920
+    width: 550px
+  +media-lg
+    width: 510px
+  +media-md
+    width: 680px
+    margin: 0 auto
+  +media-sm 
+    width: 330px
+    height: 515px
+    overflow: hidden
+
+.home__card-wide-img
+  width: 100%
+  +media-sm 
+    width: auto
+
+
+.home__card-wide-view
+  position: absolute
+  right: 18px
+  top: -125px
+  +media-lg
+    right: 150px
+  +media-md 
+    right: 20px
+    top: -25px
+  +media-sm 
+    right: 18px
+    top: 5px

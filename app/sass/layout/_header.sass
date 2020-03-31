@@ -2,6 +2,11 @@
   padding: 10px 0
   background-color: #fff
 
+.header__nav-btn
+  display: none
+  +media-sm 
+    display: block
+
 .header__row 
   display: flex
   justify-content: space-between
@@ -10,10 +15,19 @@
 .header__logo
   width: 126px
   height: 63px
+  +media-sm 
+    width: auto
 
 .header__nav 
   width: 600px
   margin-left: 20px
+  +media-lg 
+    margin-left: 0px
+  +media-md 
+    margin-left: 20px 
+    margin-right: 20px
+  +media-sm
+    display: none
 
 .header__nav-list 
   padding: 0
@@ -27,10 +41,16 @@
     text-transform: uppercase
     font-size: 14px 
     line-height: 1.2
+    +media-md 
+      font-size: 13px
+
   a.active 
     font-weight: 500
+  
 
 .header__user-block
   display: flex
   justify-content: space-between
   width: 130px
+  +media-sm 
+    width: 100px
