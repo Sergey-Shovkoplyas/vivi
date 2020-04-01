@@ -123,12 +123,15 @@
 .home__collections 
   padding-top: 264px
   padding-bottom: 170px
-  background-color: #EDEDED
+  background: url('../../img/home/section-bg.png')
+  padding-bottom: 168px
+  margin-bottom: 70px
   +media-md 
     padding-top: 150px
   +media-sm 
     overflow: hidden
     padding-top: 50px
+    padding-bottom: 30px
 
 .home__collections-title 
   margin-bottom: 50px
@@ -146,6 +149,7 @@
   text-transform: uppercase
   +media-md 
     text-align: center
+    margin-bottom: 60px
 
 .home__collections-slider
   position: relative
@@ -157,14 +161,20 @@
     right: 50px
   .slick-prev
     right: 119px
-  +media-sm 
+  +media-md
     .slick-arrow
-      bottom: 58%
+      top: 90px
+      bottom: auto
     .slick-next 
-      right: 65px
+      right: 230px
     .slick-prev
-      right: auto
-      left: 43px
+      right: 290px
+  +media-sm
+    .slick-next 
+        right: 70px
+    .slick-prev
+      right: 130px
+  
 
 
 .home__collections-item 
@@ -240,3 +250,433 @@
   +media-sm 
     right: 18px
     top: 5px
+
+// ------------------------------ home__boy --------------------------------
+.home__boy 
+  margin-bottom: 200px
+  +media-sm 
+    margin-bottom: 70px
+
+.home__boy-row 
+  display: flex
+  justify-content: start
+  +media-md 
+    flex-direction: column
+    align-items: center
+
+.home__boy-left 
+  width: 57% 
+  img 
+    width: 100%
+  +media-lg 
+    width: 75%
+  +media-md 
+    margin-bottom: 30px
+    width: 100%
+
+.home__boy-right 
+  width: 575px
+  margin-left: 45px
+  +media-sm 
+    width: 100%
+    margin-left: 0px
+
+.home__boy-title-wrap
+  background-color: #000
+  padding: 135px 90px 140px
+  margin-bottom: 43px
+  +media-1920 
+    padding: 30px
+    margin-bottom: 20px 
+  +media-md 
+    padding: 30px 60px
+  +media-sm 
+    padding: 30px
+
+.home__boy-title 
+  color: #fff 
+  font-size: 55px 
+  line-height: 1.2
+  text-transform: uppercase
+  font-weight: 600
+  +media-1920
+    font-size: 40px
+
+.home__boy-new 
+  padding-bottom: 17px
+  margin-right: 30px
+  margin-bottom: 55px
+  border-bottom: 1px solid #000
+  font-size: 14px
+  line-height: 1.5
+  font-weight: 500
+  +media-1920
+    margin-right: 0px
+    margin-bottom: 30px
+  
+
+.home__boy-text 
+  margin: 0
+  margin-bottom: 115px
+  padding-right: 75px
+  line-height: 1.5 
+  opacity: .8
+  +media-1920
+    margin-bottom: 57px
+    padding-right: 0px
+  +media-sm 
+    margin-bottom: 30px
+
+.home__boy-btn 
+  width: 175px
+
+// ------------------------------ home__look ------------------------------
+.home__look 
+  margin-bottom: 200px
+  +media-sm 
+    margin-bottom: 70px
+
+.home__look-title 
+  margin-bottom: 102px
+  +media-sm 
+    margin-bottom: 50px
+  
+.home__look-slider 
+  margin-left: 130px
+  margin-right: 130px
+  .slick-arrow 
+    bottom: auto
+    top: -60px
+  .slick-prev
+    right: 120px
+  .slick-next
+    right: 50px
+  +media-md 
+    margin-left: 0px 
+    margin-right: 0px
+  +media-sm 
+    .slick-arrow 
+      top: -35px
+    .slick-prev
+      right: 100px
+    .slick-next
+      right: 30px
+
+.home__look-item
+  text-align: center
+  padding: 0px 25px
+  img
+    display: block 
+    width: 100%
+    margin-bottom: 40px
+  h3 
+    margin: 0
+    margin-bottom: 37px 
+    font-size: 24px 
+    font-weight: 400
+  +media-md 
+    padding: 0
+
+.home__look-btn 
+  width: 175px
+  margin: 0 auto
+  a 
+    padding: 19px 30px
+
+
+// ------------------------------ home__catalog -----------------------------
+
+.home__catalog 
+  margin-bottom: 200px
+  padding: 75px 0px 125px
+  background: url('../../img/home/section-bg.png')
+  +media-md 
+    padding: 75px 0px 
+  +media-sm 
+    margin-bottom: 70px
+
+.home__catalog-row 
+  display: flex
+  justify-content: space-between
+  +media-md 
+    flex-direction: column
+    align-items: center
+
+.home__catalog-col-1 
+  width: 576px
+  +media-1920
+    width: 425px
+  +media-lg
+    width: 315px
+
+.home__catalog-col-3
+  +media-1920
+    width: 360px
+
+.home__catalog-text 
+  width: 460px
+  margin-top: 18px
+  margin-bottom: 170px
+  margin-left: 310px
+  p 
+    margin: 0
+    font-size: 14px
+    line-height: 1.8
+    font-weight: 500
+    letter-spacing: 0.25em
+  +media-1920 
+    margin-left: 0px
+  +media-md 
+    width: auto
+  +media-sm 
+    margin-bottom: 80px
+
+.home__catalog-text-title 
+  font-size: 14px 
+  text-transform: uppercase
+  font-weight: 500
+  margin-bottom: 11px
+
+.home__catalog-collaction 
+  position: relative
+
+.home__catalog-collaction-img 
+  +media-lg
+    img 
+      width: 100%
+
+.home__catalog-collaction-card 
+  position: absolute
+  bottom: -113px
+  right: 0
+  text-align: center
+  img 
+    margin-bottom: 15px
+  h3 
+    margin: 0
+    margin-bottom: 20px
+    font-weight: 400
+    font-size: 18px
+  span 
+    font-size: 20px
+    font-weight: 700
+  +media-lg 
+    right: 28px
+    img 
+      width: 100%
+
+.home__catalog-collaction-shtamp 
+  position: absolute
+  top: -125px
+  right: 33px
+  +media-1920 
+    right: -20px
+  +media-sm 
+    top: -73px
+
+
+
+.home__catalog-list
+  margin: 0
+  padding: 0
+  margin-top: 265px
+  list-style: none
+  text-align: center
+  li 
+    margin-bottom: 31px
+  a 
+    display: block
+    text-transform: uppercase
+    font-family: $font-serif
+    font-weight: 600
+    font-size: 45px
+    color: rgba(0, 0, 0, .3)
+    transition: .3s
+  a.active 
+    font-size: 55px 
+    color: rgba(0, 0, 0, 1)
+  a:hover 
+    color: rgba(0, 0, 0, 1)
+    transform: scale(1.05)
+  +media-md 
+    margin-top: 170px
+  +media-sm 
+    a
+      font-size: 30px
+    a.active 
+      font-size: 36px
+
+
+.home__catalog-card 
+  width: 260px
+  margin-bottom: 117px
+  margin-left: -150px
+  text-align: center
+  img 
+    margin-bottom: 15px
+  h3 
+    font-size: 18px 
+    font-weight: 400
+    margin: 0
+    margin-bottom: 20px
+  span 
+    font-size: 20px
+    font-weight: 700
+  +media-1920
+    margin-bottom: 280px
+    margin-left: 0px
+  +media-md 
+    margin: 0 auto 
+    margin-bottom: 20px
+
+.home__catalog-img 
+  img
+    width: 100%
+  
+
+// ------------------------------ home__popular ---------------------------
+
+.home__popular
+  margin-bottom: 240px
+  +media-sm 
+    margin-bottom: 70px
+
+.home__popular-title 
+  margin-bottom: 94px
+  +media-sm 
+    margin-bottom: 50px
+
+
+.home__popular-slider 
+  margin: 0 -25px
+  .slick-arrow 
+    top: -55px
+  .slick-prev
+    right: 120px
+  .slick-next
+    right: 50px
+  +media-sm 
+    .slick-arrow 
+      top: -35px
+
+.home__popular-card 
+  position: relative
+  padding: 0px 25px
+  text-align: center
+  img 
+    margin-bottom: 30px
+    width: 100%
+  h3 
+    margin: 0
+    margin-bottom: 10px
+    font-weight: 400
+    font-size: 16px
+  span 
+    font-weight: 700
+
+.home__popular-card-like 
+  position: absolute
+  top: 15px
+  right: 40px
+  width: 45px
+  height: 45px
+  border-radius: 50%
+  background: #fff url('../img/home/card-like.svg') no-repeat center
+  transition: .3s
+  &:hover 
+    transform: scale(1.05)
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5)
+
+// ------------------------------ home__popular ---------------------------
+
+.home__video.container 
+  position: relative
+  margin-bottom: 50px
+  img 
+    width: 100%
+  +media-sm 
+    margin-bottom: 30px
+
+.home__video-play
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  display: flex
+  align-items: center 
+  justify-content: center
+  width: 250px
+  height: 250px
+  border: 1px solid #ffffff
+  border-radius: 50%
+  &:hover span 
+    transform: scale(1.05) 
+  span 
+    position: relative
+    display: block
+    width: 118px
+    font-size: 20px
+    line-height: 1.2
+    font-weight: 500
+    letter-spacing: 0.25em
+    color: #ffffff
+    transition: .3s
+    &::after 
+      content: ''
+      position: absolute
+      bottom: 3px
+      right: 10px
+      width: 26px
+      height: 14px
+      background: url('../img/home/video-play.svg') no-repeat center
+  +media-lg 
+    width: 150px
+    height: 150px
+    span 
+      width: 104px
+      font-size: 18px
+  +media-sm
+    width: 100px
+    height: 100px
+    span 
+      width: 70px
+      font-size: 15px
+      &::after 
+        bottom: 1px
+        right: -7px
+
+
+// ------------------------------ home__sale ---------------------------
+
+.home__sale.container
+  position: relative
+  margin-bottom: 100px 
+  text-align: center
+  img 
+    width: 100%
+  +media-sm
+    margin-bottom: 70px 
+
+.home__sale-text 
+  position: absolute
+  top: 38%
+  left: 0
+  right: 0
+  +media-md 
+    top: 30%
+  +media-sm
+    top: 20%
+
+.home__sale-get 
+  margin-bottom: 20px
+  font-size: 75px 
+  font-family: $font-serif
+  font-weight: 700
+  text-transform: uppercase
+  +media-md 
+    margin-bottom: 0
+    font-size: 55px
+  +media-sm
+    font-size: 35px
+
+

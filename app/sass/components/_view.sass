@@ -6,6 +6,7 @@
   height: 250px
   border: 1px solid #fff
   border-radius: 50%    
+  transition: .3s
   &::after 
     content: ''
     position: absolute
@@ -23,6 +24,8 @@
       bottom: 5px
       left: -22px
       width: 190px
+.view:hover 
+  transform: scale(1.05)
 
 .view__text 
   position: relative
@@ -52,11 +55,14 @@
 .view.view--princess 
   border-color: #000
   &::after 
-    left: -61px
+    width: 253px
+    left: -9px
     background: url('../img/view-princess.svg') no-repeat center
     background-size: contain
-    +media-sm 
-      left: -24px
+  +media-sm 
+    &::after 
+      width: 150px
+      left: -4px
   .view__text 
     color: #000
     &::before
