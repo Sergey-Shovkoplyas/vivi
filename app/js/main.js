@@ -56,6 +56,26 @@ $( document ).ready(function() {
 		]
 	});
 
+	// -------------------- footer mobile menu ---------------------
+
+	$(window).on('load', function() {
+
+		if ( $(window).width() < 768 ) {
+			console.log('run script!!!');
+			$('.footer__title').on('click', function() {
+				$(this).toggleClass('active');
+				$(this).next('.footer__list').slideToggle();
+			});
+		}
+
+	});
+
+	// -------------------- footer language ---------------------
+
+	$('.footer__language-current').on('click', function(){
+		$(this).toggleClass('active');
+		$(this).next('.footer__language-list').slideToggle();
+	});
 
 	console.log( 'JQuery!!!' );
 

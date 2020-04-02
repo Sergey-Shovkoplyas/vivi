@@ -1,5 +1,10 @@
 # Vivi
 
+Pages
+- https://sergey-shovkoplyas.github.io/vivi/app/index.html
+- https://sergey-shovkoplyas.github.io/vivi/app/home-1.html
+- https://sergey-shovkoplyas.github.io/vivi/app/country.html
+
 Start template with 
 - normalize.css
 - jquery-3.4.1.min.js

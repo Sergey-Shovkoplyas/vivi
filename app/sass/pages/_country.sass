@@ -1,0 +1,81 @@
+.country__row 
+  display: flex
+  +media-sm
+    flex-direction: column
+
+.country__col-1
+  width: 35%
+  flex-shrink: 0
+  padding: 0 47px
+  a 
+    display: inline-block
+    margin-top: 10px
+    margin-bottom: 310px
+  +media-1920 
+    padding: 0 30px
+  +media-lg 
+    padding: 0 20px
+    width: 40%
+    a
+      margin-bottom: 90px
+  +media-md 
+    a
+      margin-bottom: 10px
+  +media-sm 
+    width: 100%
+    margin-bottom: 20px
+    text-align: center
+
+
+.country__title
+  margin-bottom: 83px
+  font-size: 55px 
+  font-weight: 600
+  font-family: $font-serif
+  text-transform: uppercase  
+  +media-md 
+    font-size: 40px 
+  +media-sm 
+    margin-bottom: 20px
+
+
+
+.country__col-2 
+  img 
+    width: 100%
+
+.country__form 
+  input[type="text"]
+    position: relative
+    display: block
+    width: 100%
+    outline: none 
+    border: none
+    padding-bottom: 13px
+    padding-right: 20px
+    border-bottom: 1px solid #000
+    font-size: 14px 
+    color: rgba(0, 0, 0, .4)
+  .country__text-wrap
+    position: relative
+    margin-bottom: 50px
+    &::after  
+      content: ''
+      position: absolute
+      top: 6px
+      right: 2px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 7px 4.5px 0 4.5px
+      border-color: #000 transparent transparent transparent
+  button 
+    width: 175px
+    float: right
+    cursor: pointer
+  +media-sm 
+    .country__text-wrap
+      margin-bottom: 40px
+    button 
+      float: none 
+      margin: 0 auto

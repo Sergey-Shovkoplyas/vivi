@@ -1,0 +1,228 @@
+.footer__top
+  padding-bottom: 50px
+  border-bottom: 1px solid #000
+  +media-sm 
+    padding-bottom: 30px
+
+.footer__row 
+  display: flex
+  +media-1920
+    justify-content: space-between
+  +media-sm 
+    flex-direction: column
+
+.footer__col-1
+  .footer__title::after
+    display: none
+
+.footer__col-2
+  margin-left: 355px
+  +media-1920
+    margin-left: 0px
+  +media-md 
+    margin-left: 20px
+    .footer__title 
+      margin-bottom: 74px
+  +media-sm
+    margin-left: 0px
+    .footer__title 
+      margin-bottom: 15px
+    
+
+.footer__col-3
+  margin-left: 211px
+  +media-1920
+    margin-left: 0px
+  +media-md 
+    margin-left: 25px
+  +media-sm
+    margin-left: 0px
+
+.footer__col-4
+  margin-left: 270px
+  +media-1920
+    margin-left: 0px
+
+.footer__title 
+  position: relative
+  margin-bottom: 50px
+  text-transform: uppercase
+  font-size: 20px
+  font-weight: 700
+  font-family: $font-serif
+  +media-sm 
+    margin-bottom: 15px
+    display: inline-block
+    &::after  
+      content: ''
+      position: absolute
+      top: 10px
+      right: -15px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 5px 5px 0 5px
+      border-color: #000 transparent transparent transparent
+      transform: rotate(0deg)
+      transition: .3s
+    &.active::after  
+      transform: rotate(180deg)
+
+.footer__form 
+  position: relative
+  width: 570px
+  margin-bottom: 33px
+  input[type='text']
+    width: 100%
+    border: none
+    outline: none
+    padding-bottom: 18px
+    padding-right: 120px
+    border-bottom: 1px solid #000
+    font-size: 14px
+    color: rgba(0, 0, 0, .4)
+  button  
+    position: absolute
+    top: 0
+    right: -7px
+    border: none
+    outline: none
+    background-color: transparent
+    font-weight: 500
+    font-size: 14px
+    text-transform: uppercase
+    cursor: pointer
+  +media-1920
+    width: 460px
+  +media-lg 
+    width: 365px
+  +media-md
+    width: 300px
+  +media-sm
+    width: auto
+    margin-bottom: 20px
+
+.footer__text 
+  width: 460px
+  font-size: 14px
+  font-weight: 500
+  line-height: 1.8
+  letter-spacing: 0.25em
+  +media-lg 
+    width: 365px
+  +media-md
+    width: 300px
+  +media-sm
+    margin-bottom: 30px
+    width: auto
+
+.footer__list 
+  padding: 0
+  margin: 0
+  list-style: none 
+  li 
+    margin-bottom: 27px
+  a
+    font-size: 14px
+    padding: 5px
+    text-transform: uppercase
+  a:hover 
+    font-weight: 500
+  +media-sm 
+    display: none
+
+.footer__list.active 
+  display: block 
+
+
+// ------------------------------ footer__bottom ---------------------------
+
+.footer__bottom 
+  padding: 30px 0px
+  font-size: 12px
+
+.footer__bottom-row 
+  display: flex
+  +media-1920
+    justify-content: space-between
+  +media-sm 
+    flex-wrap: wrap
+
+.footer__bottom-col-1
+  +media-sm
+    width: 55%
+
+.footer__bottom-col-2
+  margin-left: 700px
+  +media-1920
+    margin-left: 0px
+  +media-sm
+    display: flex
+    justify-content: flex-end
+    width: 45%
+
+.footer__bottom-col-3
+  margin-left: 530px
+  +media-1920
+    margin-left: 0px
+  +media-sm
+    width: 100%
+    margin-top: 20px
+
+.footer__social 
+  margin-top: -5px
+  a
+    display: inline-block
+    width: 18px
+    height: 18px
+  .footer__social-fb
+    background: url('../img/footer/facebook.svg')
+    margin-right: 14px
+  .footer__social-ins
+    background: url('../img/footer/instagram.svg')
+
+.footer__policy
+  display: inline-block
+  a:first-child 
+    display: inline-block
+    padding-right: 10px
+    margin-right: 10px
+    border-right: 1px solid #000 
+
+.footer__language 
+  position: relative
+  display: inline-block
+  margin-left: 75px
+  +media-1920
+    margin-left: 30px
+
+.footer__language-current
+  position: relative
+  cursor: pointer
+  &::after  
+    content: ''
+    position: absolute
+    top: 5px
+    right: -15px
+    width: 10px
+    height: 10px
+    background-color: red
+    border-style: solid
+    border-width: 6px 3px 0 3px
+    border-color: #000 transparent transparent transparent
+    transform: rotate(0deg)
+    transition: .3s
+  &.active::after  
+    transform: rotate(180deg)
+
+.footer__language-list
+  display: none
+  position: absolute
+  top: -45px
+  margin: 0
+  padding: 0
+  list-style: none
+  background-color: #fff
+  a 
+    display: inline-block
+    padding: 3px
