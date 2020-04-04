@@ -1,0 +1,33 @@
+.products-nav 
+  list-style: none 
+  padding: 0
+  margin: 0
+  text-align: center
+  li 
+    display: inline-block 
+    margin-right: 36px
+    &:last-child 
+      margin-right: 0px 
+  a 
+    display: block
+    text-transform: uppercase
+    padding: 5px
+    font-size: 14px
+    opacity: .3
+    transition: .3s
+    margin-bottom: 10px
+  a.active 
+    opacity: 1  
+    padding-bottom: 18px
+    border-bottom: 1px solid #000
+    cursor: default
+    margin-bottom: 0
+  a:hover 
+    opacity: 1
+  +media-lg 
+    li 
+      margin-right: 10px
+  +media-sm 
+    a.active   
+      padding-bottom: 10px
+    

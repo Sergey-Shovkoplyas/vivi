@@ -1,0 +1,29 @@
+.pagination
+  list-style: none 
+  padding: 0
+  margin: 0
+  li 
+    display: inline-block
+    margin-right: 6px
+    &:last-child 
+      margin-right: 0px
+  a 
+    display: block
+    opacity: 0.3
+    transition: .3s
+  a:hover 
+    opacity: 1
+  a.active 
+    position: relative
+    padding-right: 36px
+    opacity: 1
+    cursor: default
+    &::after 
+      content: ''
+      position: absolute
+      top: 50%
+      right: 0
+      transform: translate(0, -50%)
+      width: 30px
+      height: 1px
+      background-color: #000
