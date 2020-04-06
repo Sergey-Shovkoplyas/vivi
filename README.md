@@ -8,8 +8,8 @@ Pages
 - https://sergey-shovkoplyas.github.io/vivi/app/products.html
 - https://sergey-shovkoplyas.github.io/vivi/app/collections.html
 - https://sergey-shovkoplyas.github.io/vivi/app/collections-gallery.html
-- https://sergey-shovkoplyas.github.io/vivi/app/blog.html
-- https://sergey-shovkoplyas.github.io/vivi/app/blog-detail.html
+- https://sergey-shovkoplyas.github.io/vivi/app/blog
+- https://sergey-shovkoplyas.github.io/vivi/app/blog-detail
 
 Start template with 
 - normalize.css
