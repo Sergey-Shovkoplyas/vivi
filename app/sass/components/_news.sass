@@ -1,0 +1,79 @@
+.news 
+  position: relative
+  height: 665px
+  text-align: center
+  transition: .2s
+  +media-1920
+    height: 535px
+  +media-sm 
+    height: 480px
+.news:hover 
+  box-shadow: 0px 8px 55px rgba(0, 0, 0, 0.07)
+
+.news__img
+  margin-bottom: 60px
+  img 
+    width: 100%
+  +media-sm
+    margin-bottom: 20px
+
+.news__title 
+  margin-bottom: 20px
+  padding: 0 20px
+  font-family: $font-serif 
+  color: #000
+  text-transform: uppercase
+  font-weight: 700
+  font-size: 22px
+  text-align: center
+
+.news__text 
+  padding: 0 104px 
+  opacity: 0.5
+  line-height: 1.5
+  +media-1920 
+    padding: 0 50px
+  +media-lg
+    padding: 0 30px
+
+.news__date
+  position: absolute
+  bottom: 190px
+  left: -20px
+  transform: rotate(-90deg)
+  font-size: 12px
+  text-transform: uppercase
+  +media-1920 
+    bottom: 160px
+  +media-lg
+    bottom: 185px
+  +media-sm
+    bottom: 140px
+
+.news__bottom 
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  padding: 30px 0px 
+  border-top: 1px solid #000
+  +media-sm 
+    padding: 20px 0px
+
+.news__btn 
+  position: relative
+  display: inline-block
+  padding-right: 40px
+  font-size: 14px
+  font-weight: 500
+  text-transform: uppercase
+  &::after 
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    width: 30px
+    height: 17px
+    background: url('../img/blog/news-arrow.svg')
+.news__btn:hover
+  text-shadow: 0px 0px 0.5px #000
