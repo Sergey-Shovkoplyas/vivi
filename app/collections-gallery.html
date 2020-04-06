@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 
-	<title>Vivi products</title>
+	<title>Vivi collections-gallery</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +20,7 @@
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
 
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/slick.css">
@@ -69,38 +70,11 @@
 		</div>
 	</header>
 
-	<main class="products">
-		<div class="container">
-			<h2 class="products__title">produse</h2>
-			<div class="products__top-row">
-				<div class="products__top-col-1">
-
-					<div class="products__filter">
-						<div class="filter-btn">
-							<span class="filter-btn__close"></span>
-							<span class="filter-btn__text">filter</spa>
-						</div>
-					</div>
-
-				</div>
-				<div class="products__top-col-2">
-
-					<ul class="products-nav">
-						<li><a class="active">new collection</a></li>
-						<li><a href="#">dresses</a></li>
-						<li><a href="#">sets</a></li>
-						<li><a href="#">trousers</a></li>
-						<li><a href="#">pants</a></li>
-						<li><a href="#">school uniform</a></li>
-					</ul>
-					<ul class="crumbs">
-						<li><a href="#">Home / </a></li>
-						<li><a href="#">Girls / </a></li>
-						<li><a class="active">New Collection</a></li>
-					</ul>
-
-				</div>
-				<div class="products__top-col-3">
+	<main class="collections-gallery">
+		<div class="container container--1530">
+			<h2 class="collections-gallery__title">Welcome to VIVI Image Gallery.</h2>
+			<div class="collections-gallery__top-row">
+				<div class="collections-gallery__top-col-1">
 
 					<ul class="pagination">
 						<li><a class="active">01</a></li>
@@ -109,127 +83,83 @@
 						<li><a href="#">04</a></li>
 						<li><a href="#">05</a></li>
 					</ul>
-					<div class="products__result">124 result</div>
 
+				</div>
+				<div class="collections-gallery__top-col-2">
+
+					<ul class="products-nav">
+						<li><a class="active">princess vivi</a></li>
+						<li><a href="#">back to school</a></li>
+						<li><a href="#">Last summer</a></li>
+						<li><a href="#">pijamas party</a></li>
+					</ul>
+				
+				</div>
+				<div class="collections-gallery__top-col-3">
+
+					<a href="#" class="collections-gallery__store">view in store</a>
+					
 				</div>
 			</div>
-			<div class="products__row">
-				<div class="filter">
+
+
+			<div class="collections-gallery__row">
+				<div class="collections-gallery__row-left">
+	
+					<div class="collections-gallery__item">
+						<a href="img/collections-gallery/gallery-1.jpg" data-fancybox="images"><img src="img/collections-gallery/gallery-1.jpg" alt="Vivi"></a>
+					</div>
+	
+					<div class="collections-gallery__item">
+						<a href="img/collections-gallery/gallery-2.jpg" data-fancybox="images"><img src="img/collections-gallery/gallery-2.jpg" alt="Vivi"></a>
+					</div>
+	
+					<div class="collections-gallery__item">
+						<a href="img/collections-gallery/gallery-3.jpg" data-fancybox="images"><img src="img/collections-gallery/gallery-3.jpg" alt="Vivi"></a>
+					</div>
+	
+					<div class="collections-gallery__item collections-gallery__item--width">
+						<img src="img/collections-gallery/gallery-width.jpg" alt="Vivi">
+						<a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="home__video-play">
+							<span>Play video</span>
+						</a>
+					</div>
+	
+					<div class="collections-gallery__item">
+						<a href="img/collections-gallery/gallery-4.jpg" data-fancybox="images"><img src="img/collections-gallery/gallery-4.jpg" alt="Vivi"></a>
+					</div>
+	
+					<div class="collections-gallery__item">
+						<a href="img/collections-gallery/gallery-5.jpg" data-fancybox="images"><img src="img/collections-gallery/gallery-5.jpg" alt="Vivi"></a>
+					</div>
+	
+					<div class="collections-gallery__item">
+						<a href="img/collections-gallery/gallery-6.jpg" data-fancybox="images"><img src="img/collections-gallery/gallery-6.jpg" alt="Vivi"></a href="" data-fancybox="images">
+					</div>
+
+					<div class="collections-gallery__item">
+						<a href="img/collections-gallery/gallery-7.jpg"  data-fancybox="images"><img src="img/collections-gallery/gallery-7.jpg" alt="Vivi"></a>
+					</div>
 					
-					<div class="filter__size filter__item">
-						<div class="filter__title">Size</div>
-						<ul class="filter__size-list">
-							<li><a href="#">1-2 years (92 cm)</a></li>
-							<li><a class="active">2-3 years (98 cm)</a></li>
-							<li><a href="#">3-4 years (104 cm)</a></li>
-						</ul>
-						<a href="#" class="filter__more">view more</a>
-					</div>
-
-					
-					<div class="filter__color filter__item">
-						<div class="filter__title">Color</div>
-						<ul class="filter__color-list">
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-							<li><a href="#"></a></li>
-						</ul>
-					</div>
-
-					
-					<div class="filter__model filter__item">
-						<div class="filter__title">Model</div>
-						<ul class="filter__size-list">
-							<li><a class="active">dresses</a></li>
-							<li><a href="#">pants</a></li>
-							<li><a href="#">skirt</a></li>
-						</ul>
-						<a href="#" class="filter__more">view more</a>
-					</div>
-
-					<div class="filter__collections filter__item">
-						<div class="filter__title">Colections</div>
-						<ul class="filter__collections-list">
-							<li><a class="active">vivi princess</a></li>
-							<li><a href="#">back to school</a></li>
-							<li><a href="#">summer day</a></li>
-						</ul>
-					</div>
-
-					<div class="filter__price filter__item">
-						<div class="filter__title">Price</div>
-						<div class="filter__price-line">
-							<span class="filter__price-left"><span>15 RON</span></span>
-							<span class="filter__price-right"><span>550 RON</span></span>
-						</div>
-					</div>
-
 				</div>
-				<div class="products__item">
-
-					<div class="products-card">
-						<img src="img/products/product-card-1.jpg" alt="Vivi">
-						<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
-						<span>$67</span>
-						<a href="#" class="products-card-like"></a>
+	
+	
+	
+				<div class="collections-gallery__row-right">
+	
+					<div class="collections-gallery__item collections-gallery__item--height">
+						<a href="img/collections-gallery/gallery-height.jpg" data-fancybox="images"><img src="img/collections-gallery/gallery-height.jpg" alt="Vivi"></a>
 					</div>
-
-				</div>
-				<div class="products__item">
-
-					<div class="products-card">
-						<img src="img/products/product-card-2.jpg" alt="Vivi">
-						<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
-						<span>$67</span>
-						<a href="#" class="products-card-like"></a>
+	
+					<div class="collections-gallery__item">
+						<a href="img/collections-gallery/gallery-8.jpg" data-fancybox="images"><img src="img/collections-gallery/gallery-8.jpg" alt="Vivi"></a>
 					</div>
-
-				</div>
-				<div class="products__item">
-
-					<div class="products-card">
-						<img src="img/products/product-card-3.jpg" alt="Vivi">
-						<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
-						<span>$67</span>
-						<a href="#" class="products-card-like"></a>
+	
+					<div class="collections-gallery__item">
+						<a href="img/collections-gallery/gallery-9.jpg" data-fancybox="images"><img src="img/collections-gallery/gallery-9.jpg" alt="Vivi"></a>
 					</div>
-
+	
 				</div>
-				<div class="products__item">
-
-					<div class="products-card">
-						<img src="img/products/product-card-4.jpg" alt="Vivi">
-						<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
-						<span>$67</span>
-						<a href="#" class="products-card-like"></a>
-					</div>
-
-				</div>
-				<div class="products__item">
-
-					<div class="products-card">
-						<img src="img/products/product-card-5.jpg" alt="Vivi">
-						<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
-						<span>$67</span>
-						<a href="#" class="products-card-like"></a>
-					</div>
-
-				</div>
-				<div class="products__item">
-
-					<div class="products-card">
-						<img src="img/products/product-card-2.jpg" alt="Vivi">
-						<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
-						<span>$67</span>
-						<a href="#" class="products-card-like"></a>
-					</div>
-
-				</div>
-
 			</div>
 		</div>
 	</main>
@@ -306,6 +236,7 @@
 
 
 	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
 

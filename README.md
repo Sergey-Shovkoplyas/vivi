@@ -4,6 +4,10 @@ Pages
 - https://sergey-shovkoplyas.github.io/vivi/app/index.html
 - https://sergey-shovkoplyas.github.io/vivi/app/home-1.html
 - https://sergey-shovkoplyas.github.io/vivi/app/country.html
+- -
+- https://sergey-shovkoplyas.github.io/vivi/app/products.html
+- https://sergey-shovkoplyas.github.io/vivi/app/collections.html
+- https://sergey-shovkoplyas.github.io/vivi/app/collections-gallery.html
 
 Start template with 
 - normalize.css

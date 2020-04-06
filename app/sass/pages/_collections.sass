@@ -1,0 +1,57 @@
+.collections 
+  +media-sm 
+    padding-top: 83px
+  
+.collections__row 
+  display: flex
+  flex-wrap: wrap
+
+.collections__item
+  width: 50%
+  position: relative
+  margin-bottom: -5px
+  +media-sm 
+    width: 100%
+
+.collections__img 
+  img 
+    width: 100%
+
+.collections__title 
+  position: absolute
+  width: 100%
+  top: 50%
+  left: 0
+  transform: translate(0, -50%)
+  padding: 0 15px
+  color: #fff 
+  text-align: center
+  font-size: 75px
+  font-weight: 600
+  +media-1920
+    font-size: 60px
+  +media-lg 
+    font-size: 50px
+  +media-md
+    font-size: 40px
+
+.collections__shtamp 
+  position: absolute
+  bottom: 120px
+  right: 120px
+  +media-1920
+    bottom: 40px
+    right: 40px
+    transform: scale(0.7)
+  +media-lg 
+    bottom: 0px
+    right: 0px
+    transform: scale(0.6)
+  +media-md
+    bottom: -30px
+    right: -30px
+    transform: scale(0.5)
+  +media-sm
+    bottom: -50px
+    right: -45px
+    transform: scale(0.45)

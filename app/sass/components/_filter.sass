@@ -1,3 +1,177 @@
-.filter__btn 
+.filter-btn 
+  width: 75px
+  position: relative
   font-size: 14px 
   text-transform: uppercase
+  cursor: pointer
+  &:hover
+    text-shadow: 0px 0px 1px #000
+.filter-btn__text
+  display: inline-block
+  vertical-align: middle
+
+.filter-btn__close
+  display: none
+  vertical-align: middle
+  margin-right: 10px
+  position: relative
+  width: 15px
+  height: 15px
+  border: none 
+  outline: none
+  background: transparent
+  cursor: pointer
+  &::before, 
+  &::after 
+    position: absolute
+    content: ''
+    top: 50%
+    left: 0
+    right: 0
+    transform: translate(0, -50%)
+    height: 1px
+    background-color: #000
+  &::before 
+    transform: translate(0, -50%) rotate(45deg)
+  &::after 
+    transform: translate(0, -50%) rotate(-45deg)
+.filter-btn__close.active 
+  display: inline-block
+
+.filter 
+  display: none
+  position: absolute 
+  z-index: 10
+  top: 0
+  left: 25px
+  width: 315px 
+  padding-right: 55px
+  padding-left: 50px
+  padding-bottom: 130px
+  margin-left: -50px
+  background-color: #fff
+  ul 
+    padding: 0
+    margin: 0
+    list-style: none 
+  li 
+    margin-bottom: 12px
+  li:last-child 
+    margin-bottom: 20px
+  a 
+    font-size: 14px 
+    text-transform: uppercase
+  a:hover,
+  a.active 
+    text-shadow: 0px 0px 1px #000
+
+.filter__title 
+  font-size: 20px
+  font-weight: 700
+  font-family: $font-serif
+  text-transform: uppercase
+  margin-bottom: 20px
+
+.filter__item 
+  margin-bottom: 40px
+  a.active 
+    display: block
+    position: relative
+    &::after 
+      content: ''
+      position: absolute
+      top: 50%
+      right: 0
+      transform: translate(0, -50%)
+      width: 14px
+      height: 14px
+      background: url('../img/products/chacked.svg')
+
+.filter__more 
+  position: relative
+  font-weight: 500
+  padding-right: 24px 
+  &::after,
+  &::before 
+    content: ''
+    position: absolute
+    top: 50%
+    right: 0
+    transform: translate(0, -50%)
+    width: 14px
+    height: 1px 
+    background-color: #000
+  &::before
+    transform: translate(0, -50%) rotate(90deg)
+
+.filter__color
+  li
+    display: inline-block
+    margin-right: 10px
+    margin-bottom: 0
+  li:last-child 
+    margin-right: 0
+    margin-bottom: 0
+  a 
+    display: block
+    width: 16px
+    height: 16px
+    border-radius: 50%
+    background-color: red
+  li:nth-child(1) a
+    background-color: #475986
+  li:nth-child(2) a
+    background-color: #fff
+    border: 1px solid #E4E4E4
+  li:nth-child(3) a
+    background-color: #C2C7C0
+  li:nth-child(4) a
+    background-color: #994B47
+  li:nth-child(5) a
+    background-color: #884E33
+  li:nth-child(6) a
+    background-color: #DDBA82
+  li:nth-child(7) a
+    background-color: #ECEBE9
+  
+.filter__price-line 
+  position: relative
+  width: 213px 
+  height: 20px 
+  &::after 
+    content: ''
+    position: absolute
+    top: 50%
+    left: 0
+    right: 0
+    height: 1px
+    background-color: #000
+
+  .filter__price-left,
+  .filter__price-right
+    position: absolute
+    z-index: 1
+    top: 0
+    display: block
+    width: 20px 
+    height: 20px
+    border-radius: 50%
+    background-color: #000
+    cursor: pointer
+    border: 2px solid #fff
+    span 
+      position: absolute
+      display: block
+      top: 30px
+      left: 50%
+      right: 0
+      transform: translate(-50%, 0)
+      width: 58px
+      text-align: center
+      font-size: 14px
+
+  .filter__price-left
+    left: 0
+
+  .filter__price-right
+    right: 0

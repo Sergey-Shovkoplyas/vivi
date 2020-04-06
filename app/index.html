@@ -30,7 +30,7 @@
 <body>
 
 	<header class="header">
-		<div class="container">
+		<div class="container header__row-wrap">
 			<div class="header__row">
 				<a href="#" class="header__logo"><img src="img/logo.png" alt="Vivi"></a>
 				<nav class="header__nav">
@@ -45,7 +45,7 @@
 					</ul>
 				</nav>
 				<div class="header__user-block">
-					<a href="#" class="header__search"><img src="img/icon-search.svg" alt="search"></a>
+					<a href="#" class="header__search active"><img src="img/icon-search.svg" alt="search"></a>
 					<a href="#" class="header__user"><img src="img/icon-user.svg" alt="search"></a>
 					<a href="#" class="header__bag"><img src="img/icon-bag.svg" alt="search"></a>
 				</div>
@@ -57,6 +57,15 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="header__search-block">
+			<div class="container">
+				<form action="#" class="header__search-form">
+					<input class="header__search-text" type="text" placeholder="Search">
+					<button class="header__search-submit" type="submit"></button>
+					<button class="header__search-close" type="button"></button>
+				</form>
+			</div> 
 		</div>
 	</header>
 	<section class="home__welcome">
@@ -72,7 +81,7 @@
 			</div>
 			<div class="home__welcome-right">
 				<div class="home__welcome-view">
-					<a href="#" class="view view--black">
+					<a href="#" class="view">
 						<span class="view__text">View collection</span>
 					</a>
 				</div>
@@ -117,7 +126,7 @@
 					<div class="home__card-wide">
 						<img src="img/home/card-wide-1.jpg" alt="Vivi" class="home__card-wide-img">
 						<div class="home__card-wide-view">
-							<a href="#" class="view view--princess">
+							<a href="#" class="view view--princess view--black">
 								<span class="view__text">View collection</span>
 							</a>
 						</div>
@@ -146,7 +155,7 @@
 					<div class="home__card-wide">
 						<img src="img/home/card-wide-1.jpg" alt="Vivi" class="home__card-wide-img">
 						<div class="home__card-wide-view">
-							<a href="#" class="view view--princess">
+							<a href="#" class="view view--princess view--black">
 								<span class="view__text">View collection</span>
 							</a>
 						</div>
@@ -228,7 +237,7 @@
 							<span>$67</span>
 						</div>
 						<div class="home__catalog-collaction-shtamp">
-							<a href="#" class="view view--princess">
+							<a href="#" class="view view--princess view--black">
 								<span class="view__text">View collection</span>
 							</a>
 						</div>

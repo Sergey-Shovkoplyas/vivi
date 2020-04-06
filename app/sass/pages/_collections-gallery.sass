@@ -1,0 +1,103 @@
+.collections-gallery
+  padding: 100px 0px 120px
+  .home__video-play
+    height: 200px
+    width: 200px
+  +media-lg 
+    .home__video-play
+      height: 150px
+      width: 150px
+  +media-md 
+    .home__video-play
+      top: 20px
+      left: 80px
+      transform: scale(.6)
+  +media-sm 
+    padding: 154px 0px 40px
+    .home__video-play
+      top: -10px
+      left: 35px
+
+  
+  
+
+.collections-gallery__title
+  margin-bottom: 47px
+  +media-sm 
+    margin-bottom: 40px
+
+.collections-gallery__top-row
+  position: relative
+  display: flex 
+  justify-content: space-between
+  margin-bottom: 25px
+  +media-md 
+    flex-wrap: wrap
+
+.collections-gallery__top-col-2 
+  margin-right: 70px
+  +media-1920
+    margin-right: 0
+  +media-md 
+    width: 100%
+    order: -1
+    margin-bottom: 30px
+
+.collections-gallery__store 
+  text-transform: uppercase
+  font-size: 14px
+  &:hover 
+    text-shadow: 0px 0px 1px #000
+
+// --------------- collections-gallery__row ------------------
+
+.collections-gallery__row
+  display: flex 
+  margin: 0 -25px
+  +media-sm 
+    flex-wrap: wrap
+    margin: 0 -5px
+
+.collections-gallery__item 
+  padding: 25px
+  img 
+    width: 100%
+    margin-bottom: -3px
+    transition: .3s
+  +media-lg 
+    padding: 15px
+  +media-md
+    padding: 10px
+  +media-sm
+    padding: 5px
+  img:hover 
+    transform: scale(1.03)
+    box-shadow: 0px 0px 15px 0px #000
+
+.collections-gallery__row-left 
+  display: flex
+  width: 60%
+  flex-wrap: wrap
+  .collections-gallery__item
+    width: 33.33%
+  .collections-gallery__item--width
+    position: relative
+    width: 66.66%
+  +media-sm 
+    width: 100%
+
+
+.collections-gallery__row-right
+  display: flex
+  width: 40%
+  flex-wrap: wrap
+  .collections-gallery__item
+    width: 50%
+  .collections-gallery__item--height
+    width: 100%
+    margin-bottom: 7px
+  +media-sm 
+    width: 100%
+    .collections-gallery__item--height
+      margin-bottom: 0px
+  

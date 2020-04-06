@@ -1,14 +1,29 @@
 .header 
+  position: relative
+  z-index: 100
   padding: 10px 0
   background-color: #fff
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  &::after 
+    content: ''
+    position: absolute
+    z-index: 20
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: #fff
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
   +media-sm
     position: fixed
     z-index: 20
     top: 0
     left: 0
     right: 0
-    // box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1)
+
+
+.header__row-wrap
+  position: relative
+  z-index: 30
 
 .header__nav-btn
   display: none
@@ -39,7 +54,7 @@
     display: none
     position: absolute
     z-index: 10
-    top: 74px
+    top: 73px
     left: 0
     right: 0
     width: auto
@@ -103,15 +118,19 @@
 .header__search-block
   display: none
   position: absolute
-  z-index: 20
+  z-index: 10
   background-color: #fff
-  bottom: -174px 
-  width: 100%
-  padding-top: 60px
+  top: 0
+  left: 0
+  right: 0
+  width: auto
+  padding-top: 158px
   padding-bottom: 20px
   +media-sm 
-    bottom: -95px 
-    padding-top: 0
+    padding-top: 108px
+
+.header__search-form 
+  position: relative
 
 .header__search-text 
   display: block
@@ -128,7 +147,7 @@
   
 .header__search-submit
   position: absolute
-  bottom: 44px
+  top: 20px
   left: 0
   width: 25px
   height: 25px
@@ -139,7 +158,7 @@
 
 .header__search-close
   position: absolute
-  bottom: 44px
+  top: 20px
   right: 0
   width: 22px
   height: 22px

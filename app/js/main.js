@@ -96,4 +96,12 @@ $( document ).ready(function() {
 		$('.header__nav').slideToggle();
 	});
 
+	// -------------------- filter-btn --------------------------
+
+	$('.filter-btn').on('click', function() {
+		$(this).children('.filter-btn__close').toggleClass('active');
+		$('.filter').slideToggle();
+	});
+
+
 });
