@@ -56,6 +56,31 @@ $( document ).ready(function() {
 		]
 	});
 
+	$('.unifromi__partners-slider').slick({
+		dots: false,
+		arrows: false,
+		infinite: true,
+		slidesToShow: 7,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 5,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			
+		]
+	});
+
 	// -------------------- footer mobile menu ---------------------
 
 	$(window).on('load', function() {

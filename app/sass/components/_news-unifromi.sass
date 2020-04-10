@@ -1,0 +1,79 @@
+.news-unifromi 
+  position: relative
+  height: 1103px
+  text-align: center
+  transition: .2s
+  +media-lg
+    height: 930px
+  +media-md
+    height: 770px
+  +media-sm 
+    height: 770px
+  +media-374
+    height: 680px
+.news-unifromi:hover 
+  box-shadow: 0px 8px 55px rgba(0, 0, 0, 0.07)
+
+.news-unifromi__img
+  margin-bottom: 23px
+  img 
+    width: 100%
+  .news-unifromi__bage
+    position: absolute
+    top: 20px
+    right: 20px
+    width: 100px
+    height: 100px
+  +media-sm
+    margin-bottom: 20px
+
+.news-unifromi__title 
+  margin: 0
+  margin-bottom: 30px
+  padding: 0 20px
+  font-family: $font-serif 
+  color: #000
+  text-transform: uppercase
+  font-weight: 600
+  font-size: 35px
+  text-align: center
+  +media-md 
+    font-size: 28px
+  +media-sm
+    margin-bottom: 20px
+    font-size: 25px
+
+.news-unifromi__text 
+  padding: 0 70px 
+  opacity: 0.5
+  line-height: 1.5
+  +media-lg
+    padding: 0 30px
+
+.news-unifromi__bottom 
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  padding: 22px 0px 
+  border-top: 1px solid #000
+  +media-sm 
+    padding: 20px 0px
+
+.news-unifromi__btn 
+  position: relative
+  display: inline-block
+  padding-right: 40px
+  font-size: 14px
+  font-weight: 500
+  text-transform: uppercase
+  &::after 
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    width: 30px
+    height: 17px
+    background: url('../img/blog/news-arrow.svg')
+.news-unifromi__btn:hover
+  text-shadow: 0px 0px 0.5px #000

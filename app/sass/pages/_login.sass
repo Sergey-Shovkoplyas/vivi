@@ -1,0 +1,100 @@
+.login__row 
+  display: flex
+  +media-sm
+    flex-direction: column
+
+.login__col-1
+  width: 35%
+  flex-shrink: 0
+  padding: 0 47px
+  .header__logo 
+    display: inline-block
+    margin-top: 10px
+    margin-bottom: 30%
+  +media-1920 
+    padding: 0 30px
+  +media-lg 
+    padding: 0 20px
+    width: 40%
+    .header__logo
+      margin-bottom: 90px
+  +media-md
+    .header__logo
+      margin-bottom: 10%
+  +media-sm 
+    width: 100%
+    margin-bottom: 20px
+    text-align: center
+
+
+.login__title
+  margin-bottom: 20px
+  font-size: 55px 
+  font-weight: 600
+  font-family: $font-serif
+  text-transform: uppercase  
+  +media-lg
+    font-size: 50px
+  +media-md 
+    margin-bottom: 10px
+    font-size: 36px 
+  +media-sm 
+    margin-bottom: 20px
+
+.login__no-account 
+  font-size: 14px
+  text-transform: uppercase
+  display: inline-block
+  margin-bottom: 50px
+  +media-md 
+    margin-bottom: 20px
+
+
+.login__col-2 
+  img 
+    width: 100%
+
+.login__form 
+  .login__forgot 
+    text-transform: uppercase
+    font-size: 14px
+    float: left
+  button 
+    width: 175px
+    float: right
+    cursor: pointer
+  +media-md 
+    .login__forgot 
+      display: block
+      float: none
+      margin-bottom: 20px
+    button
+      float: none
+  +media-sm 
+    .login__text-wrap
+      margin-bottom: 40px
+    button 
+      float: none 
+      margin: 0 auto
+  
+
+.login__form-email,
+.login__password
+  position: relative
+  display: block
+  width: 100%
+  outline: none 
+  border: none
+  padding-bottom: 13px
+  padding-right: 20px
+  border-bottom: 1px solid #000
+  font-size: 14px 
+  color: rgba(0, 0, 0, .4)
+
+.login__form-email
+  margin-bottom: 70px
+  +media-md 
+    margin-bottom: 20px
+
+.login__password
+  margin-bottom: 30px

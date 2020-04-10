@@ -10,6 +10,13 @@ Pages
 - https://sergey-shovkoplyas.github.io/vivi/app/collections-gallery.html
 - https://sergey-shovkoplyas.github.io/vivi/app/blog
 - https://sergey-shovkoplyas.github.io/vivi/app/blog-detail
+- -
+- https://sergey-shovkoplyas.github.io/vivi/app/unifromi-1
+- https://sergey-shovkoplyas.github.io/vivi/app/unifromi-2
+- https://sergey-shovkoplyas.github.io/vivi/app/unifromi-3
+- https://sergey-shovkoplyas.github.io/vivi/app/login
+- https://sergey-shovkoplyas.github.io/vivi/app/about
+
 
 Start template with 
 - normalize.css
