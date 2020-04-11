@@ -1,0 +1,58 @@
+.cart-header 
+  position: absolute
+  bottom: -10px 
+  left: 50%
+  transform: translate(-50%, 0)
+  display: flex
+  width: 100%
+  max-width: 640px
+  padding: 0 35px  
+
+.cart-header__stage
+  position: relative
+  width: 50%
+  height: 1px
+.cart-header__stage.active
+  background-color: #000
+
+.cart-header__indicator
+  position: absolute
+  z-index: 1
+  top: 50%
+  transform: translate(0, -50%)
+  width: 15px
+  height: 15px
+  border-radius: 50% 
+  border: 1px solid #000
+  background-color: #fff
+  &::before 
+    content: 'text'
+    position: absolute
+    top: -35px
+    left: 50%
+    transform: translate(-50%, 0)
+    font-size: 14px
+    font-weight: 500
+    text-transform: uppercase
+    background-color: #fff
+  +media-md 
+    &::before
+      top: auto
+      bottom: -20px
+      font-size: 13px
+
+  &--1
+    left: -7.5px
+    &::before 
+      content: 'livrare'
+  &--2
+    right: -7.5px
+    &::before 
+      content: 'plata'
+  &--3
+    right: -7.5px
+    &::before 
+      content: 'rezumat'
+.cart-header__indicator.active 
+  background-color: #000
+    

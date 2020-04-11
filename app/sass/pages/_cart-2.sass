@@ -1,0 +1,110 @@
+.cart-2__top-row 
+  margin-top: 50px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 74px
+  +media-lg 
+    margin-bottom: 40px
+  +media-sm 
+    margin-top: 110px
+
+.cart-2__top-items,
+.cart-2__top-widhlist 
+  font-size: 14px
+  font-weight: 500
+  text-transform: uppercase
+
+.cart-2__top-widhlist
+  padding-right: 30px 
+  background: url('../img/cart/hart.svg') no-repeat center right
+  a:hover 
+    text-shadow: 0 0 1px #000
+
+.cart-2__row
+  padding: 0 310px
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -25px 
+  padding-bottom: 150px
+  +media-1920 
+    padding: 0 50px
+    padding-bottom: 150px
+  +media-lg 
+    padding-bottom: 116px
+  +media-md 
+    padding: 0
+    padding-bottom: 116px
+
+
+.cart-2__item 
+  width: 25%
+  padding: 0 25px
+  +media-md 
+    width: 33.33%
+  +media-sm
+    width: 100%
+
+// -------------------- cart-card -------------------------
+
+.cart-card 
+  width: 100%
+  padding-bottom: 25px
+
+.cart-card__img 
+  position: relative
+  margin-bottom: 20px
+  img 
+    width: 100%
+
+.cart-card__title 
+  text-align: center
+  margin-bottom: 10px
+
+.cart-card__price
+  text-align: center
+  font-weight: 700
+  margin-bottom: 10px
+
+.cart-card__color
+  margin-bottom: 20px
+
+.cart-card__color 
+  display: flex
+  justify-content: center
+
+.cart-card__size
+  margin-bottom: 20px
+  .select-size__list
+    padding: 20px 15px
+
+.cart-card__close 
+  border: none 
+  outline: none
+  background: transparent
+  position: absolute
+  top: 6px
+  right: 6px
+  width: 20px
+  height: 20px
+  padding: 2px 
+  transition: .2s
+  &::before, 
+  &::after 
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 16px 
+    height: 1px
+    background: #000
+  &::before
+    transform: translate(-50%, -50%) rotate(45deg)
+  &::after
+    transform: translate(-50%, -50%) rotate(-45deg)
+  &:hover 
+    transform: scale(1.2)
+
+
+

@@ -9,6 +9,12 @@ Pages
 - http://vivi.kurama.xyz/collections-gallery.html
 - http://vivi.kurama.xyz/blog.html
 - http://vivi.kurama.xyz/blog-detail.html
+- -
+- http://vivi.kurama.xyz/unifromi-1.html
+- http://vivi.kurama.xyz/unifromi-2.html
+- http://vivi.kurama.xyz/unifromi-3.html
+- http://vivi.kurama.xyz/login.html
+- http://vivi.kurama.xyz/about.html
 
 Start template with 
 - normalize.css

@@ -116,7 +116,6 @@ $( document ).ready(function() {
 	// -------------------- header__nav toggle ---------------------
 
 	$('.header__nav-btn').on('click', function() {
-		// $(this).children('.nav-btn').toggleClass('active');
 		$('.header__nav-btn .nav-btn').toggleClass('active');
 		$('.header__nav').slideToggle();
 	});
@@ -126,6 +125,53 @@ $( document ).ready(function() {
 	$('.filter-btn').on('click', function() {
 		$(this).children('.filter-btn__close').toggleClass('active');
 		$('.filter').slideToggle();
+	});
+
+	// -------------------- registration-form--------------------------
+
+	togglePlaceholder();
+
+	$('.registration-form__item').focusin( showPlaceholder )
+	$('.registration-form__item').blur( togglePlaceholder )
+
+	function togglePlaceholder() {
+		$('.registration-form__item').each(function() {
+			let value = $(this).val();
+			let $placeholder = $(this).next('.registration-form__item-placeholder');
+			if (value) {
+				$placeholder.show();
+			} else {
+				$placeholder.hide();
+			}
+		});
+	}
+
+	function showPlaceholder() {
+		$(this).next('.registration-form__item-placeholder').show();
+	}
+
+	// -------------------- select-size --------------------------
+
+	$('.select-size').on('click', function() {
+		$(this).children('.select-size__list').slideToggle();
+	});
+
+	$('.select-size__list li').on('click', function(e) {
+		if ( !$(this).children('.select-size__stock').length ) {
+			let sizeItemValue = $(this).children('.select-size__item-value').text();
+			let $sizeArea = $(this).parent('.select-size__list').prev('.select-size__value');
+			$sizeArea.text( sizeItemValue );
+			$sizeArea.addClass('active');
+		} else {
+			e.stopPropagation();
+		}
+
+	});
+
+	// -------------------- view-cart --------------------------
+
+	$('.view-cart__close').on('click', function() {
+		$(this).parent('.view-cart').fadeOut();
 	});
 
 

@@ -1,0 +1,314 @@
+.cart__row 
+  position: relative
+  display: flex
+  padding: 86px 0px
+  +media-lg 
+    flex-wrap: wrap
+    justify-content: center
+  +media-sm 
+    padding-top: 130px
+
+.cart__left
+  display: flex
+  width: 1240px
+  margin: 0 -25px
+  +media-md
+    margin: 0 -15px
+  +media-sm
+    flex-wrap: wrap
+    margin: 0
+
+.cart__product
+  width: 50%
+  padding: 0 25px
+  +media-md
+    padding: 0 15px
+  +media-sm 
+    width: 100%
+    padding: 0
+    margin-bottom: 10px
+
+  img 
+    width: 100%
+
+.cart__right
+  width: 415px
+  margin-left: 50px 
+  +media-lg
+    width: 500px
+    order: -1
+    margin-left: 0
+    margin-bottom: 30px
+
+.cart__form-title
+  display: flex
+  justify-content: space-between
+  font-size: 20px
+  margin-bottom: 40px
+.cart__form-title-price 
+  font-weight: 700
+.cart__form-color-wrap
+  margin-bottom: 40px
+
+.cart__quantity
+  margin-bottom: 30px
+
+.cart__select-size
+  margin-bottom: 30px
+
+.cart__size-link 
+  display: flex
+  justify-content: flex-end
+  margin-bottom: 20px
+  a
+    font-size: 14px
+    font-weight: 500
+    text-transform: uppercase
+  a:hover 
+    text-shadow: 0px 0px 1px #000
+
+.cart__add-wishlist
+  margin-bottom: 50px
+
+.cart__details-row 
+  display: flex
+  justify-content: space-between
+  +media-1920
+    flex-wrap: wrap
+
+.cart__details-left
+  width: 260px
+  +media-1920
+    width: 100%
+    margin-bottom: 15px
+
+.cart__details-title
+  font-family: $font-serif 
+  font-size: 20px 
+  font-weight: 700
+  margin-bottom: 13px
+  text-transform: uppercase
+
+.cart__details-text
+  line-height: 1.5
+  opacity: .5
+
+.cart__details-right
+  font-size: 14px 
+  text-transform: uppercase
+  font-weight: 500
+  +media-1920
+    display: flex
+    justify-content: space-between
+    width: 100%
+
+.cart__details-material
+  margin-bottom: 20px
+
+.cart__top-title
+  font-size: 35px 
+  text-transform: uppercase
+  font-family: $font-serif 
+  font-weight: 600
+  text-align: center
+
+// -------------------- select-size -------------------------
+.select-size
+  position: relative
+
+.select-size__value
+  position: relative
+  display: block
+  width: 100%
+  padding-bottom: 13px
+  border-bottom: 1px solid #000
+  font-size: 14px 
+  color: rgba(0, 0, 0, .4)
+  margin-bottom: 22px
+  cursor: pointer
+  &::after  
+    content: ''
+    position: absolute
+    top: 6px
+    right: 2px
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 7px 4.5px 0 4.5px
+    border-color: #000 transparent transparent transparent
+.select-size__value.active 
+  color: #000
+
+.select-size__list
+  display: none
+  position: absolute
+  top: 30px
+  z-index: 1
+  width: 100%
+  padding: 30px
+  margin: 0
+  list-style: none 
+  border: 1px solid rgba(0, 0, 0, 0.1)
+  border-top: none
+  background-color: #fff
+  li 
+    display: flex
+    justify-content: space-between
+    margin-bottom: 30px
+    font-size: 14px 
+    text-transform: uppercase
+    cursor: pointer
+  li:last-child 
+    margin-bottom: 0
+.select-size__stock,
+.select-size__left
+  text-transform: none
+.select-size__stock
+  color: #FF3030
+
+
+// -------------------- radio-color -------------------------
+
+.radio-color__item
+  display: inline-block 
+  margin-right: 10px
+  &:last-child 
+    margin-right: none
+  input[type='radio']
+    display: none
+  label 
+    position: relative
+    display: block
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    background: #fff
+    border: 1px solid #fff
+    cursor: pointer
+    &::before
+      position: absolute
+      content: ''
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 16px
+      height: 16px
+      border-radius: 50%
+  input[type='radio']:checked + label 
+    border: 1px solid #000
+.radio-color__item--1
+  label::before
+    background-color: #000
+.radio-color__item--2
+  label::before
+    width: 14px
+    height: 14px
+    border: 1px solid #E4E4E4
+    background-color: #fff
+.radio-color__item--3
+  label::before
+    background-color: #FFBEF1
+
+// -------------------- product-quantity -------------------------
+
+.product-quantity
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.product-quantity__bnt
+  position: relative
+  border: none
+  outline: none
+  background: none
+  width: 20px
+  height: 20px
+  cursor: pointer
+  font-size: 0
+  &::before, 
+  &::after 
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 10px
+    height: 1px
+    background-color: #000
+  &--plus
+    &::after 
+      transform: translate(-50%, -50%) rotate(90deg)
+
+.product-quantity__input
+  border: none
+  outline: none
+  display: inline-block
+  width: 50px
+  text-align: center
+
+
+// -------------------- view-cart -------------------------
+
+.view-cart
+  position: absolute
+  z-index: 1
+  top: 0
+  right: 0
+  width: 260px 
+  text-align: center
+  padding: 25px 25px 15px
+  box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.07)
+  background-color: #fff
+  +media-sm 
+    top: 84px
+
+.view-cart__img 
+  position: relative
+  margin-bottom: 10px
+  img 
+    width: 100%
+.view-cart__price
+  position: absolute
+  right: 0
+  bottom: 0
+  padding: 7px 12px
+  font-weight: 700
+  background-color: #fff
+
+.view-cart__btn 
+  font-size: 14px
+  text-transform: uppercase
+  font-weight: 500
+  &:hover 
+    text-shadow: 0px 0px 1px #000
+
+.view-cart__close 
+  border: none 
+  outline: none
+  background: transparent
+  position: absolute
+  top: 6px
+  right: 6px
+  width: 20px
+  height: 20px
+  padding: 2px 
+  transition: .3s
+  &::before, 
+  &::after 
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 16px 
+    height: 1px
+    background: #000
+  &::before
+    transform: translate(-50%, -50%) rotate(45deg)
+  &::after
+    transform: translate(-50%, -50%) rotate(-45deg)
+  &:hover 
+    transform: scale(1.2)
+
+

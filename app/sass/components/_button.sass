@@ -25,3 +25,22 @@
 .button--black 
   color: #000
   border-color: #000
+
+.button__wishlist
+  display: inline-block
+  position: relative
+  &::after 
+    position: absolute
+    top: -2px
+    right: -30px
+    content: ''
+    width: 22px
+    height: 22px 
+  &--add 
+    &::after
+      background: url('../img/cart/hart.svg') no-repeat center
+  &--added 
+    &::after
+      background: url('../img/cart/hart-fill.svg') no-repeat center
+
+  

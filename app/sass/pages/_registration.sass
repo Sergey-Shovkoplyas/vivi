@@ -1,0 +1,167 @@
+.registration__logo 
+  display: block
+  padding-top: 10px
+  padding-bottom: 30px
+  +media-sm 
+    text-align: center
+
+.registration__title
+  margin-bottom: 40px
+
+
+// --------------------- registration-form ---------------------
+
+.registration-form-wrap
+  max-width: 880px 
+  margin: 0 auto 
+  margin-bottom: 200px
+  +media-md
+    margin-bottom: 120px
+  +media-sm 
+    margin-bottom: 60px
+
+.registration-form__radio-wrap
+  display: flex
+  justify-content: space-between
+  max-width: 310px
+  margin: 0 auto
+  margin-bottom: 50px 
+  input[type='radio']
+    display: none
+  label 
+    position: relative
+    padding-left: 36px
+    cursor: pointer
+    &::before 
+      content: ''
+      position: absolute
+      top: -1px
+      left: 0
+      width: 20px
+      height: 20px
+      border-radius: 50%
+      border: 1px solid #CCCCCC
+      box-sizing: border-box
+  input[type='radio']:checked + label 
+    &::after 
+      content: ''
+      position: absolute
+      top: 3px
+      left: 4px
+      width: 12px
+      height: 12px
+      border-radius: 50%
+      background-color: #000
+  +media-sm 
+    margin-bottom: 30px 
+
+
+
+.registration-form__inputs-row 
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+.registration-form__item-wrap
+  position: relative
+  +media-sm 
+    width: 100%
+.registration-form__item-placeholder
+  display: none
+  position: absolute
+  top: -22px
+  left: 0
+  font-size: 12px 
+  opacity: .4
+  +media-sm 
+    top: -17px
+.registration-form__item-wrap--country
+  &::after  
+    content: ''
+    position: absolute
+    top: 6px
+    right: 2px
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 7px 4.5px 0 4.5px
+    border-color: #000 transparent transparent transparent
+
+.registration-form__item
+  width: 415px
+  border: none 
+  outline: none
+  padding-bottom: 15px
+  margin-bottom: 70px
+  border-bottom: 1px solid #000
+  font-size: 14px
+  color: #000
+  &:placeholder 
+    opacity: 0.4
+  +media-md
+    width: 315px
+  +media-sm 
+    width: 100%
+    margin-bottom: 27px
+
+.registration-form__item-wrap--number 
+  padding-left: 65px
+  .registration-form__item-prefix
+    position: absolute
+    left: 0
+    top: 0
+    width: 40px
+    padding-bottom: 15px
+    border-bottom: 1px solid #000
+    font-size: 16px
+  .registration-form__item
+    display: inline-block
+    width: 350px
+  +media-md 
+    .registration-form__item
+      width: 250px   
+  +media-sm
+    .registration-form__item
+      width: 100% 
+
+.registration-form__checkbox-wrap
+  max-width: 400px
+  font-size: 12px
+  a 
+    text-decoration: underline
+  input[type='checkbox']
+    display: none
+  label 
+    display: block
+    position: relative
+    padding-left: 34px 
+    cursor: pointer
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translate(0, -50%)
+      width: 24px
+      height: 24px
+      border: 1px solid #000
+  input[type='checkbox']:checked + label 
+    &::before
+      background: url('../img/checked.svg') no-repeat center
+  +media-sm 
+    margin-top: 20px
+
+.registration-form__submit-wrap 
+  margin-top: 50px
+  margin-bottom: 50px
+  width: 175px 
+  float: right
+  +media-sm 
+    float: none 
+    text-align: center
+    margin-left: auto 
+    margin-right: auto
+  button
+    cursor: pointer
+
+
