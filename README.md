@@ -24,6 +24,13 @@ Pages
 - https://sergey-shovkoplyas.github.io/vivi/app/cart-4
 - https://sergey-shovkoplyas.github.io/vivi/app/cart-5
 - https://sergey-shovkoplyas.github.io/vivi/app/cart-6
+- -
+- https://sergey-shovkoplyas.github.io/vivi/app/account-1
+- https://sergey-shovkoplyas.github.io/vivi/app/account-2
+- https://sergey-shovkoplyas.github.io/vivi/app/account-3
+- https://sergey-shovkoplyas.github.io/vivi/app/account-4
+- https://sergey-shovkoplyas.github.io/vivi/app/account-5
+- https://sergey-shovkoplyas.github.io/vivi/app/account-6
 
 
 

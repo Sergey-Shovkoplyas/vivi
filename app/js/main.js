@@ -174,5 +174,11 @@ $( document ).ready(function() {
 		$(this).parent('.view-cart').fadeOut();
 	});
 
+	// -------------------- account-sidebar --------------------------
+
+	$('.account-sidebar__btn').on('click', function() {
+		$('.account-sidebar').toggleClass('active')
+	})
+
 
 });

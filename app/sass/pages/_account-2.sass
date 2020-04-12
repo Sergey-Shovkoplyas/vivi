@@ -1,0 +1,61 @@
+.account-2__item
+  max-width: 570px 
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -25px
+  margin-bottom: 50px
+
+.account-2__item-col 
+  position: relative
+  width: 50%
+  padding: 0 25px
+  +media-sm 
+    width: 100%
+
+.account-2__item-img 
+  position: relative
+  img
+    margin-bottom: -5px
+    width: 100%
+  &:hover 
+    &::before 
+      content: '+2'
+      position: absolute
+      display: flex
+      justify-content: center
+      align-items: center
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      color: #fff
+      font-weight: 500
+      background-color: rgba(0, 0, 0, .2)
+  +media-sm 
+    margin-bottom: 20px
+
+.account-2__item-text
+  margin-bottom: 10px
+  span
+    display: block
+    font-size: 14px
+    margin-bottom: 20px
+  span.mark 
+    display: inline
+    text-transform: uppercase
+    font-weight: 500
+
+.account-2__item-order 
+  color: #427865
+  +media-sm 
+    margin-bottom: 30px
+
+
+.account-2__item-btn 
+  position: absolute
+  left: 25px
+  bottom: 0
+  width: 175px
+  +media-sm 
+    position: static
+    margin: 0 auto

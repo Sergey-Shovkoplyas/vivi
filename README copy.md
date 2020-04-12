@@ -23,6 +23,14 @@ Pages
 - http://vivi.kurama.xyz/cart-4.html
 - http://vivi.kurama.xyz/cart-5.html
 - http://vivi.kurama.xyz/cart-6.html
+- -
+- http://vivi.kurama.xyz/account-1.html
+- http://vivi.kurama.xyz/account-2.html
+- http://vivi.kurama.xyz/account-3.html
+- http://vivi.kurama.xyz/account-4.html
+- http://vivi.kurama.xyz/account-5.html
+- http://vivi.kurama.xyz/account-6.html
+
 
 Start template with 
 - normalize.css

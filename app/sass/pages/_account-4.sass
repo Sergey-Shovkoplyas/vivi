@@ -1,0 +1,66 @@
+.account-4__wrap
+  max-width: 425px
+
+.account-4__item
+  margin-bottom: 100px
+  +media-sm 
+    margin-bottom: 80px
+
+.account-4__item-top
+  position: relative
+  margin-bottom: 30px
+  &::after 
+    position: absolute
+    content: ''
+    top: 0
+    right: 0
+    width: 50px
+    height: 40px
+  span 
+    display: block
+    margin-bottom: 5px
+
+.account-4__item-top.visa
+  &::after
+    background: url('../img/cart/card-bage-visa.png') no-repeat center 
+    background-size: contain
+.account-4__item-top.mastercard
+  &::after
+    background: url('../img/cart/card-bage-mastercard.png') no-repeat center 
+    background-size: contain
+
+.account-4__item-bottom
+  display: flex
+  justify-content: space-between
+
+.account-4__item-checkbox
+  max-width: 275px
+  input[type='checkbox']
+    display: none
+  label 
+    display: block
+    position: relative
+    padding-left: 36px 
+    cursor: pointer
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translate(0, -50%)
+      width: 22px
+      height: 22px
+      border: 1px solid #000
+  input[type='checkbox']:checked + label 
+    &::before
+      background: url('../img/checked.svg') no-repeat center
+
+.account-4__item-btn
+  button 
+    border: none 
+    outline: none 
+    background: none
+    text-transform: uppercase
+    font-weight: 500
+    font-size: 14px
+  
