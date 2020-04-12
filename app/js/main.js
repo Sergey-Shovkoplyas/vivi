@@ -180,5 +180,37 @@ $( document ).ready(function() {
 		$('.account-sidebar').toggleClass('active')
 	})
 
+	// -------------------- header-submenu --------------------------
+
+	$('.header__nav-list a').on('click', function() {
+		$(this).next('.header-submenu').slideToggle();
+		$(this).toggleClass('active');
+	});
+
+	// -------------------- cart__quantity --------------------------
+
+	$('.product-quantity__bnt--minus').on('click', function() {
+		let $input = $(this).next('.product-quantity__input');
+		let inputValue = $input.val();
+		if ( inputValue > 0 ) {
+			inputValue--;
+			$input.val(inputValue)
+		}
+	});
+
+	$('.product-quantity__bnt--plus').on('click', function() {
+		let $input = $(this).prev('.product-quantity__input');
+		let inputValue = $input.val();
+		inputValue++;
+		$input.val(inputValue);
+	
+	});
+
+	// -------------------- registration-form-masked-input --------------------------
+
+	$('#input-cvv').mask("999");
+	$('#input-date').mask("99/99");
+	$('#input-card').mask("9999    9999   9999    9999");
+
 
 });
