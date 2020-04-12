@@ -1,4 +1,4 @@
-# Vivi
+# Vivi hosting
 
 Pages
 - http://vivi.kurama.xyz/index.html
@@ -15,6 +15,14 @@ Pages
 - http://vivi.kurama.xyz/unifromi-3.html
 - http://vivi.kurama.xyz/login.html
 - http://vivi.kurama.xyz/about.html
+- -
+- http://vivi.kurama.xyz/registration.html
+- http://vivi.kurama.xyz/cart-1.html
+- http://vivi.kurama.xyz/cart-2.html
+- http://vivi.kurama.xyz/cart-3.html
+- http://vivi.kurama.xyz/cart-4.html
+- http://vivi.kurama.xyz/cart-5.html
+- http://vivi.kurama.xyz/cart-6.html
 
 Start template with 
 - normalize.css

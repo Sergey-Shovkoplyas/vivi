@@ -16,6 +16,15 @@ Pages
 - https://sergey-shovkoplyas.github.io/vivi/app/unifromi-3
 - https://sergey-shovkoplyas.github.io/vivi/app/login
 - https://sergey-shovkoplyas.github.io/vivi/app/about
+- -
+- https://sergey-shovkoplyas.github.io/vivi/app/registration
+- https://sergey-shovkoplyas.github.io/vivi/app/cart-1
+- https://sergey-shovkoplyas.github.io/vivi/app/cart-2
+- https://sergey-shovkoplyas.github.io/vivi/app/cart-3
+- https://sergey-shovkoplyas.github.io/vivi/app/cart-4
+- https://sergey-shovkoplyas.github.io/vivi/app/cart-5
+- https://sergey-shovkoplyas.github.io/vivi/app/cart-6
+
 
 
 Start template with 
