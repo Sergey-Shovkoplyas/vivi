@@ -206,11 +206,52 @@ $( document ).ready(function() {
 	
 	});
 
+
+
+
+	// -------------------- initialize products-card__sliders ---------------------
+
+	$('.products-card__slider').each(function() {
+		console.log(this);
+		$(this).slick({
+			dots: false,
+			arrows: false,
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 1000,
+			
+			speed: 300,
+			fade: true,
+			cssEase: 'linear'
+	
+		});
+	
+		let slickPause = () => {
+			$(this).slick('slickPause');
+		}
+		
+		slickPause();
+		
+		$(this).mouseover(function() {
+			$(this).slick('slickPlay')
+		});
+		$(this).mouseout(function() {
+			slickPause();
+		});
+	});
+
+	
 	// -------------------- registration-form-masked-input --------------------------
 
 	$('#input-cvv').mask("999");
 	$('#input-date').mask("99/99");
 	$('#input-card').mask("9999    9999   9999    9999");
+
+	
+
+
 
 
 });
