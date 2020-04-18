@@ -1,12 +1,37 @@
 .home__welcome
+  position: relative
   padding: 230px 0px 50px
-  background: #000 url('../img/home/welcome-bg.jpg') no-repeat center top
+  // background: #000 url('../img/home/welcome-bg.jpg') no-repeat center top
+  background-color: #000
   background-size: cover
   +media-md 
     padding: 150px 0px 50px
   +media-sm
     padding: 50px 0px 50px
     margin-top: 84px
+
+.home__welcome-bg
+  display: flex
+  position: absolute
+  z-index: -1
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+
+
+.home__welcome-bg-img
+  position: relative
+  &::before 
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(0, 0, 0, .4)
+
+    
 
 .home-1 
   .home__welcome
@@ -54,24 +79,51 @@
   position: relative
   width: 160px
   border-bottom: 1px solid rgba(255, 255, 255, 0.4)
-  &::after 
-    content: ''
+  span 
+    font-size: 16px
     position: absolute
+    transition: .3s
+  span:hover 
+    transform: scale(1.1)
+  .home__welcome-prev 
+    top: -25px 
+    left: 0
+    font-weight: 300
+    &::before 
+      content: ""
+      position: absolute
+      top: 50%
+      left: -12px
+      width: 9px
+      height: 9px
+      transform: translate(0, -50%) rotate(-45deg)
+      border-top: 2px solid #fff
+      border-left: 2px solid #fff
+      border-radius: 2px
+  .home__welcome-next
+    top: 12px 
+    right: 0
+    font-weight: 300
+    &::before 
+      content: ""
+      position: absolute
+      top: 50%
+      right: -12px
+      width: 9px
+      height: 9px
+      transform: translate(0, -50%) rotate(135deg)
+      border-top: 2px solid #fff
+      border-left: 2px solid #fff
+      border-radius: 2px
+  .home__welcome-number-line
+    position: absolute
+    z-index: 1
     bottom: -1px
     left: 0
     width: 80px 
     height: 1px
     background-color: #fff
-  span 
-    position: absolute
-    &:first-child 
-      top: -25px 
-      left: 0
-      font-weight: 700
-    &:last-child 
-      top: 12px 
-      right: 0
-      font-weight: 300
+
 
 .home__welcome-right
   position: relative
@@ -81,6 +133,7 @@
 
 .home__welcome-view
   position: absolute
+  z-index: 1
   top: 120px 
   left: -190px 
   +media-md 
@@ -184,6 +237,16 @@
         right: 70px
     .slick-prev
       right: 130px
+
+.home__collections-slider-wrap
+  position: relative
+
+.home__collections-slider-arrows
+  position: absolute
+  z-index: 1
+  bottom: 0
+  right: 0
+  background: red
   
 
 
@@ -193,6 +256,7 @@
 .home__card 
   position: relative
   width: 415px
+  overflow: hidden
   +media-1920
     width: 260px
   +media-lg
@@ -206,6 +270,9 @@
 .home__card-img 
   width: 100%
   margin-bottom: 21px
+  transition: .3s
+  &:hover 
+    transform: scale(1.05) 
 
 .home__card-title
   margin: 0
@@ -279,8 +346,13 @@
 
 .home__boy-left 
   width: 57% 
+  overflow: hidden
   img 
     width: 100%
+    transition: .3s
+  &:hover 
+    img 
+      transform: scale(1.05)
   +media-lg 
     width: 75%
   +media-md 
@@ -379,21 +451,26 @@
   text-align: center
   padding: 0px 25px
   margin-bottom: 5px
+  overflow: hidden
   img
     display: block 
     width: 100%
     margin-bottom: 40px
+    transition: .3s
   h3 
     margin: 0
     margin-bottom: 37px 
     font-size: 24px 
     font-weight: 400
+  & img:hover 
+    transform: scale(1.05)
   +media-md 
     padding: 0
 
 .home__look-btn 
   width: 175px
   margin: 0 auto
+  margin-bottom: 5px
   a 
     padding: 19px 30px
 
@@ -583,9 +660,11 @@
   position: relative
   padding: 0px 25px
   text-align: center
+  overflow: hidden
   img 
     margin-bottom: 30px
     width: 100%
+    transition: .3s
   h3 
     margin: 0
     margin-bottom: 10px
@@ -593,6 +672,8 @@
     font-size: 16px
   span 
     font-weight: 700
+  & img:hover 
+    transform: scale(1.05)
 
 .home__popular-card-like 
   position: absolute
@@ -672,8 +753,13 @@
   position: relative
   margin-bottom: 97px 
   text-align: center
+  overflow: hidden
   img 
     width: 100%
+    transition: .3s
+  &:hover
+    img 
+      transform: scale(1.05)
   +media-sm
     margin-bottom: 70px 
 
