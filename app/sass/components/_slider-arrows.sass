@@ -2,12 +2,93 @@
   display: flex
   justify-content: space-between
   width: 110px
-
-.slider-arrows
+  padding-bottom: 14px
   font-size: 14px
   font-weight: 500
   text-transform: uppercase
+  &::before 
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 2px
+    background-color: #3D3D3D
+    opacity: .2
+  &::after 
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translate(-50%, 0)
+    width: 20px
+    height: 2px
+    background-color: #3D3D3D
+
 
 .slider-arrows__prev,
 .slider-arrows__next
   cursor: pointer
+
+.slider-arrows__prev-arrow
+  display: block
+  position: absolute
+  z-index: 1
+  bottom: 0
+  left: 0
+  width: 0px
+  height: 2px
+  background-color: #3D3D3D
+  transition: .3s
+  &::before 
+    display: none
+    content: ""
+    position: absolute
+    top: 50%
+    left: 0
+    width: 8px
+    height: 8px
+    transform: translate(0, -50%) rotate(-45deg)
+    border-top: 2px solid #3D3D3D
+    border-left: 2px solid #3D3D3D
+    border-radius: 2px
+    transition: .3s
+
+.slider-arrows__next-arrow
+  display: block
+  position: absolute
+  z-index: 1
+  bottom: 0
+  right: 0
+  width: 0px
+  height: 2px
+  background-color: #3D3D3D
+  transition: .3s
+  &::before 
+    display: none
+    content: ""
+    position: absolute
+    top: 50%
+    right: 0
+    width: 8px
+    height: 8px
+    transform: translate(0, -50%) rotate(135deg)
+    border-top: 2px solid #3D3D3D
+    border-left: 2px solid #3D3D3D
+    border-radius: 2px
+
+.slider-arrows__prev:hover
+  text-shadow: 0 0 0.5px #000
+  .slider-arrows__prev-arrow
+    display: block
+    width: 55px
+    &::before
+      display: block
+
+.slider-arrows__next:hover
+  text-shadow: 0 0 0.5px #000
+  .slider-arrows__next-arrow
+    display: block
+    width: 55px
+    &::before
+      display: block

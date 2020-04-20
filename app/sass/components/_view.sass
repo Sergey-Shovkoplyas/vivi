@@ -1,14 +1,16 @@
 .view 
   position: relative
+  z-index: 1
   display: block
   padding: 62px 37px
   width: 250px
   height: 250px
-  border: 1px solid #fff
+  border: 1px solid transparent
   border-radius: 50%    
   transition: .3s
   &::after 
     content: ''
+    z-index: 1
     position: absolute
     bottom: 50px
     left: -50px
@@ -17,8 +19,8 @@
     background: url('../img/view-black.svg') no-repeat center
     background-size: contain
     
-.view:hover 
-  transform: scale(1.05)
+// .view:hover 
+//   transform: scale(1.05)
 
 .view__text 
   position: relative
@@ -60,7 +62,7 @@
 
 
 .view.view--black 
-  border-color: #000
+  border-color: transparent
   .view__text 
     color: #000
     &::before
