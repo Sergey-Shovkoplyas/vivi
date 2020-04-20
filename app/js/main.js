@@ -252,7 +252,7 @@ $(document).ready(function () {
 
 	$('.home__welcome-slider').slick({
 		fade: true,
-		speed: 2000,
+		speed: 500,
 		autoplay: false,
 		prevArrow: $('.home__welcome-prev'),
 		nextArrow: $('.home__welcome-next'),
