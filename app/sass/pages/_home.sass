@@ -33,9 +33,9 @@
 
     
 
-.home-1 
-  .home__welcome
-    background: #000 url('../img/home/welcome-bg-1.jpg') no-repeat center top
+// .home-1 
+//   .home__welcome
+//     background: #000 url('../img/home/welcome-bg-1.jpg') no-repeat center top
 
 .home__welcome-row 
   display: flex
@@ -307,16 +307,18 @@
 
 .home__card-wide-view
   position: absolute
+  z-index: 1
   right: 18px
-  top: -125px
+  top: 13px
   +media-lg
-    right: 150px
+    right: 0px
   +media-md 
     right: 20px
-    top: -25px
+    top: 235px
   +media-sm 
-    right: -45px
-    top: -45px
+    right: auto
+    left: -41px
+    top: 14px
     transform: scale(0.6)
 
 // ------------------------------ home__boy --------------------------------
