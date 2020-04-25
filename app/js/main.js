@@ -191,6 +191,7 @@ $(document).ready(function () {
 	$('.header__nav-list a').on('click', function () {
 		$(this).next('.header-submenu').slideToggle();
 		$(this).toggleClass('active');
+		$(this).next('.header-submenu').toggleClass('active');
 	});
 
 	// -------------------- cart__quantity --------------------------
@@ -226,7 +227,7 @@ $(document).ready(function () {
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			autoplay: true,
-			autoplaySpeed: 1000,
+			autoplaySpeed: 700,
 
 			speed: 300,
 			fade: true,
