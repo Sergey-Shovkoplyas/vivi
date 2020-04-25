@@ -112,10 +112,15 @@
 
 .about__shop-img
   padding: 0 25px
+  overflow: hidden
   img 
     width: 100%
+    transition: .3s
   +media-sm
     padding: 0 10px
+.about__shop-img:hover 
+  img 
+    transform: scale(1.05)
 
 .about__shop-right
   display: flex

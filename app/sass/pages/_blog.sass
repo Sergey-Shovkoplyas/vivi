@@ -71,10 +71,15 @@
 
 .blog__bottom-left
   width: 57%
+  overflow: hidden
   img 
     width: 100%
+    transition: .3s
   +media-sm 
     width: 100%
+.blog__bottom-left:hover 
+  img 
+    transform: scale(1.05)
 
 .blog__bottom-right 
   width: 43%

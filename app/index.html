@@ -23,7 +23,10 @@
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/main.min.css">
+
+
 
 </head>
 
@@ -37,7 +40,55 @@
 					<ul class="header__nav-list">
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Collections</a></li>
-						<li><a class="active" href="#">Girl</a></li>
+						<li>
+							<a>Girl</a>
+							<div class="header-submenu">
+								<div class="header-submenu__left">
+
+									<div class="header-submenu__list-wrap">
+										<div class="header-submenu__list-litle">Category</div>
+										<ul class="header-submenu__list">
+											<li><a href="#">All</a></li>
+											<li><a href="#">new</a></li>
+											<li><a href="#">accesorii</a></li>
+											<li><a href="#">sets</a></li>
+											<li><a href="#">popular</a></li>
+										</ul>
+									</div>
+
+									<div class="header-submenu__list-wrap">
+										<div class="header-submenu__list-litle">Category</div>
+										<ul class="header-submenu__list">
+											<li><a href="#">Dress</a></li>
+											<li><a href="#">school uniform</a></li>
+											<li><a href="#">jaket</a></li>
+											<li><a href="#">pants</a></li>
+											<li><a href="#">collections</a></li>
+										</ul>
+									</div>
+
+								</div>
+								<div class="header-submenu__right">
+
+									<div class="header-submenu__img">
+										<img src="img/home/submenu-1.jpg" alt="Vivi">
+										<div class="header-submenu__img-text">
+											<span class="header-submenu__img-number">28</span>
+											<span class="header-submenu__img-title">new in</span>
+										</div>
+									</div>
+
+									<div class="header-submenu__img">
+										<img src="img/home/submenu-2.jpg" alt="Vivi">
+										<div class="header-submenu__img-text">
+											<span class="header-submenu__img-number">56</span>
+											<span class="header-submenu__img-title">dresses</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</li>
 						<li><a href="#">Boy</a></li>
 						<li><a href="#">Women</a></li>
 						<li><a href="#">uniformi scolar</a></li>
@@ -68,102 +119,174 @@
 			</div> 
 		</div>
 	</header>
-	<section class="home__welcome">
-		<div class="home__welcome-row container">
-			<div class="home__welcome-left">
-				<h1 class="home__welcome-title">Welcome to vivi online store</h1>
-				<p class="home__welcome-text">Geci, cămăși, bluze, pulovere, fuste, pantaloni, blugi sau accesorii pentru fete.
-					Returnare online sau la magazin rapidă, simplă și gratuită.</p>
-				<div class="home__welcome-number">
-					<span>03</span>
-					<span>06</span>
+
+	<section class="home__welcome-slider">
+
+		<div class="home__welcome">
+			<div class="home__welcome-bg">
+				<div class="home__welcome-bg-img" data-animation="slideInLeft"  data-delay=".2s" data-animation-out="slideOutRight">
+					<img src="img/home/welcome-slider-bg-1.jpg" alt="Vivi">
+				</div>
+				<div class="home__welcome-bg-img" data-animation="slideInLeft" data-delay=".1s" data-animation-out="slideOutRight">
+					<img src="img/home/welcome-slider-bg-2.jpg" alt="Vivi">
+				</div>
+				<div class="home__welcome-bg-img" data-animation="slideInLeft" data-delay=".0s" data-animation-out="slideOutRight">
+					<img src="img/home/welcome-slider-bg-3.jpg" alt="Vivi">
 				</div>
 			</div>
-			<div class="home__welcome-right">
-				<div class="home__welcome-view">
-					<a href="#" class="view">
-						<span class="view__text">View collection</span>
-					</a>
+			<div class="home__welcome-row container">
+				<div class="home__welcome-left" data-animation="fadeIn" data-delay="1s">
+					<h1 class="home__welcome-title">Welcome to vivi online store</h1>
+					<p class="home__welcome-text">Geci, cămăși, bluze, pulovere, fuste, pantaloni, blugi sau accesorii pentru fete.
+						Returnare online sau la magazin rapidă, simplă și gratuită.</p>
+					<div class="home__welcome-number">
+						<span class="home__welcome-prev">03</span>
+						<span class="home__welcome-next">06</span>
+						<div class="home__welcome-number-line" data-animation="slideInRight" data-delay="1s"></div>
+					</div>
 				</div>
-				<div class="home__welcome-img"><img src="img/home/welcome-img.jpg" alt="Vivi"></div>
-				<div class="home__welcome-product">Babydoll-Kleid mit Tupfenprint</div>
-				<div class="home__welcome-price">
-					<span class="home__welcome-full">$85</span>
-					<span class="home__welcome-sale">$67</span>
-				</div>
-				<div class="home__welcome-buttons">
-					<a class="button" href="#">More about</a>
-					<a class="button button--fill-white" href="#">Checkout</a>
+				<div class="home__welcome-right">
+					<div class="home__welcome-view hoja">
+						<a href="#" class="view"> 
+							<span class="view__text">View collection</span>
+						</a>
+					</div>
+					<div class="home__welcome-img slow" data-animation="fadeInLeft" data-delay="1s"><img src="img/home/welcome-img.jpg" alt="Vivi"></div>
+					<div class="home__welcome-product" data-animation="fadeIn" data-delay="1s">Babydoll-Kleid mit Tupfenprint</div>
+					<div class="home__welcome-price" data-animation="fadeIn" data-delay="1s">
+						<span class="home__welcome-full">$85</span>
+						<span class="home__welcome-sale">$67</span>
+					</div>
+					<div class="home__welcome-buttons" data-animation="fadeIn" data-delay="1s">
+						<a class="button" href="#">More about</a>
+						<a class="button button--fill-white" href="#">Checkout</a>
+					</div>
 				</div>
 			</div>
 		</div>
+
+		<div class="home__welcome">
+			<div class="home__welcome-bg">
+				<div class="home__welcome-bg-img" data-animation="slideInLeft" data-delay=".2s" data-animation-out="slideOutRight">
+					<img src="img/home/welcome-slider-bg-4.jpg" alt="Vivi">
+				</div>
+				<div class="home__welcome-bg-img" data-animation="slideInLeft" data-delay=".1s" data-animation-out="slideOutRight">
+					<img src="img/home/welcome-slider-bg-5.jpg" alt="Vivi">
+				</div>
+				<div class="home__welcome-bg-img" data-animation="slideInLeft" data-delay=".0s" data-animation-out="slideOutRight">
+					<img src="img/home/welcome-slider-bg-6.jpg" alt="Vivi">
+				</div>
+			</div>
+			<div class="home__welcome-row container">
+				<div class="home__welcome-left" data-animation="fadeIn" data-delay="1s">
+					<h1 class="home__welcome-title">vivi online store Welcome </h1>
+					<p class="home__welcome-text">Geci, cămăși, bluze, pulovere, fuste, pantaloni, blugi sau accesorii pentru fete.
+						Returnare online sau la magazin rapidă, simplă și gratuită.</p>
+					<div class="home__welcome-number">
+						<span class="home__welcome-prev">03</span>
+						<span class="home__welcome-next">06</span>
+						<div class="home__welcome-number-line" data-animation="slideInRight" data-delay="1s"></div>
+					</div>
+				</div>
+				<div class="home__welcome-right">
+					<div class="home__welcome-view hoja">
+						<a href="#" class="view view--school">
+							<span class="view__text">View collection</span>
+						</a>
+					</div>
+					<div class="home__welcome-img slow" data-animation="fadeInLeft" data-delay="1s"><img src="img/home/welcome-img-1.jpg" alt="Vivi"></div>
+					<div class="home__welcome-product" data-animation="fadeIn" data-delay="1s">Babydoll-Kleid mit Tupfenprint</div>
+					<div class="home__welcome-price" data-animation="fadeIn" data-delay="1s">
+						<span class="home__welcome-full">$85</span>
+						<span class="home__welcome-sale">$67</span>
+					</div>
+					<div class="home__welcome-buttons" data-animation="fadeIn" data-delay="1s">
+						<a class="button" href="#">More about</a>
+						<a class="button button--fill-white" href="#">Checkout</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+
 	</section>
 	<section class="home__collections">
 		<h2 class="home__collections-title">Last collections</h2>
 		<div class="container">
 			<span class="home__collections-text">Stylish and warm</span>
-			<div class="home__collections-slider">
+			<div class="home__collections-slider-wrap">
 
-				<div class="home__collections-item">
-					<div class="home__card">
-						<img src="img/home/card-1.jpg" alt="Vivi" class="home__card-img">
-						<h3 class="home__card-title">Babydoll-Kleid mit Tupfenprint</h3>
-						<span class="home__card-price">$67</span>
-						<a href="#" class="home__card-like"></a>
-					</div>
+				<div class="home__card-wide-view hoja">
+					<a href="#" class="view view--princess view--black">
+						<span class="view__text">View collection</span>
+					</a>
 				</div>
 
-				<div class="home__collections-item">
-					<div class="home__card">
-						<img src="img/home/card-2.jpg" alt="Vivi" class="home__card-img">
-						<h3 class="home__card-title">Babydoll-Kleid mit Tupfenprint</h3>
-						<span class="home__card-price">$67</span>
-						<a href="#" class="home__card-like"></a>
-					</div>
-				</div>
-
-				<div class="home__collections-item">
-					<div class="home__card-wide">
-						<img src="img/home/card-wide-1.jpg" alt="Vivi" class="home__card-wide-img">
-						<div class="home__card-wide-view">
-							<a href="#" class="view view--princess view--black">
-								<span class="view__text">View collection</span>
-							</a>
+				<div class="home__collections-slider-arrows">
+					<div class="slider-arrows">
+						<div class="slider-arrows__prev">
+							<span class="slider-arrows__prev-text">Prev</span>
+							<span class="slider-arrows__prev-arrow"></span>
+						</div>
+						<div class="slider-arrows__next">
+							<span class="slider-arrows__next-text">Next</span>
+							<span class="slider-arrows__next-arrow"></span>
 						</div>
 					</div>
 				</div>
-
-				<div class="home__collections-item">
-					<div class="home__card">
-						<img src="img/home/card-1.jpg" alt="Vivi" class="home__card-img">
-						<h3 class="home__card-title">Babydoll-Kleid mit Tupfenprint</h3>
-						<span class="home__card-price">$67</span>
-						<a href="#" class="home__card-like"></a>
-					</div>
-				</div>
-
-				<div class="home__collections-item">
-					<div class="home__card">
-						<img src="img/home/card-2.jpg" alt="Vivi" class="home__card-img">
-						<h3 class="home__card-title">Babydoll-Kleid mit Tupfenprint</h3>
-						<span class="home__card-price">$67</span>
-						<a href="#" class="home__card-like"></a>
-					</div>
-				</div>
-
-				<div class="home__collections-item">
-					<div class="home__card-wide">
-						<img src="img/home/card-wide-1.jpg" alt="Vivi" class="home__card-wide-img">
-						<div class="home__card-wide-view">
-							<a href="#" class="view view--princess view--black">
-								<span class="view__text">View collection</span>
-							</a>
+				
+				<div class="home__collections-slider">
+	
+					<div class="home__collections-item">
+						<div class="home__card">
+							<img src="img/home/card-1.jpg" alt="Vivi" class="home__card-img">
+							<h3 class="home__card-title">Babydoll-Kleid mit Tupfenprint</h3>
+							<span class="home__card-price">$67</span>
+							<a href="#" class="home__card-like"></a>
 						</div>
 					</div>
+	
+					<div class="home__collections-item">
+						<div class="home__card">
+							<img src="img/home/card-2.jpg" alt="Vivi" class="home__card-img">
+							<h3 class="home__card-title">Babydoll-Kleid mit Tupfenprint</h3>
+							<span class="home__card-price">$67</span>
+							<a href="#" class="home__card-like"></a>
+						</div>
+					</div>
+	
+					<div class="home__collections-item">
+						<div class="home__card-wide">
+							<img src="img/home/card-wide-1.jpg" alt="Vivi" class="home__card-wide-img">
+						</div>
+					</div>
+	
+					<div class="home__collections-item">
+						<div class="home__card">
+							<img src="img/home/card-1.jpg" alt="Vivi" class="home__card-img">
+							<h3 class="home__card-title">Babydoll-Kleid mit Tupfenprint</h3>
+							<span class="home__card-price">$67</span>
+							<a href="#" class="home__card-like"></a>
+						</div>
+					</div>
+	
+					<div class="home__collections-item">
+						<div class="home__card">
+							<img src="img/home/card-2.jpg" alt="Vivi" class="home__card-img">
+							<h3 class="home__card-title">Babydoll-Kleid mit Tupfenprint</h3>
+							<span class="home__card-price">$67</span>
+							<a href="#" class="home__card-like"></a>
+						</div>
+					</div>
+	
+					<div class="home__collections-item">
+						<div class="home__card-wide">
+							<img src="img/home/card-wide-1.jpg" alt="Vivi" class="home__card-wide-img">
+						</div>
+					</div>
+	
 				</div>
-
-
-
 			</div>
 		</div>
 	</section>
@@ -191,28 +314,44 @@
 	<section class="home__look">
 		<div class="container">
 			<h2 class="home__look-title">Buy the look</h2>
-			<div class="home__look-slider">
-				<div class="home__look-item">
-					<img src="img/home/look-1.jpg" alt="Vivi">
-					<h3>Babydoll-Kleid mit Tupfenprint</h3>
-					<div class="home__look-btn">
-						<a href="#" class="button button--black">buy the look</a>
+			<div class="home__look-slider-wrap">
+
+				<div class="home__look-slider-arrows">
+					<div class="slider-arrows">
+						<div class="slider-arrows__prev">
+							<span class="slider-arrows__prev-text">Prev</span>
+							<span class="slider-arrows__prev-arrow"></span>
+						</div>
+						<div class="slider-arrows__next">
+							<span class="slider-arrows__next-text">Next</span>
+							<span class="slider-arrows__next-arrow"></span>
+						</div>
 					</div>
 				</div>
 
-				<div class="home__look-item">
-					<img src="img/home/look-2.jpg" alt="Vivi">
-					<h3>Babydoll-Kleid mit Tupfenprint</h3>
-					<div class="home__look-btn">
-						<a href="#" class="button button--black">buy the look</a>
+				<div class="home__look-slider">
+					<div class="home__look-item">
+						<img src="img/home/look-1.jpg" alt="Vivi">
+						<h3>Babydoll-Kleid mit Tupfenprint</h3>
+						<div class="home__look-btn">
+							<a href="#" class="button button--black">buy the look</a>
+						</div>
 					</div>
-				</div>
-
-				<div class="home__look-item">
-					<img src="img/home/look-1.jpg" alt="Vivi">
-					<h3>Babydoll-Kleid mit Tupfenprint</h3>
-					<div class="home__look-btn">
-						<a href="#" class="button button--black">buy the look</a>
+	
+					<div class="home__look-item">
+						<img src="img/home/look-2.jpg" alt="Vivi">
+						<h3>Babydoll-Kleid mit Tupfenprint</h3>
+						<div class="home__look-btn">
+							<a href="#" class="button button--black">buy the look</a>
+						</div>
+					</div>
+	
+					<div class="home__look-item">
+						<img src="img/home/look-1.jpg" alt="Vivi">
+						<h3>Babydoll-Kleid mit Tupfenprint</h3>
+						<div class="home__look-btn">
+							<a href="#" class="button button--black">buy the look</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -227,29 +366,67 @@
 						<p>Geci, cămăși, bluze, pulovere, fuste, 
 							 pantaloni, blugi sau accesorii pentru fete. Returnare online</p>
 					</div>
-					<div class="home__catalog-collaction">
-						<div class="home__catalog-collaction-img">
-							<img src="img/home/catalog-1.jpg" alt="Vivi">
+					<div class="home__catalog-collaction-slider">
+
+						<div class="home__catalog-collaction">
+							<div class="home__catalog-collaction-img" data-animation="slideInLeft"  data-delay=".3s" data-animation-out="slideOutLeft">
+								<img src="img/home/catalog-slider-1.jpg" alt="Vivi">
+							</div>
+							<div class="home__catalog-collaction-card" data-animation="slideInLeft"  data-delay="0s" data-animation-out="slideOutLeft">
+								<img src="img/home/catalog-slider-2.jpg" alt="Vivi">
+								<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
+								<span>$67</span>
+							</div>
+							<div class="home__catalog-collaction-shtamp hoja">
+								<a href="#" class="view view--princess view--black">
+									<span class="view__text">View collection</span>
+								</a>
+							</div>
 						</div>
-						<div class="home__catalog-collaction-card">
-							<img src="img/home/catalog-2.jpg" alt="Vivi">
-							<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
-							<span>$67</span>
+
+						<div class="home__catalog-collaction">
+							<div class="home__catalog-collaction-img" data-animation="slideInLeft"  data-delay=".3s" data-animation-out="slideOutLeft">
+								<img src="img/home/catalog-slider-3.jpg" alt="Vivi">
+							</div>
+							<div class="home__catalog-collaction-card" data-animation="slideInLeft"  data-delay="0s" data-animation-out="slideOutLeft">
+								<img src="img/home/catalog-slider-4.jpg" alt="Vivi">
+								<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
+								<span>$67</span>
+							</div>
+							<div class="home__catalog-collaction-shtamp hoja">
+								<a href="#" class="view view--princess view--black">
+									<span class="view__text">View collection</span>
+								</a>
+							</div>
 						</div>
-						<div class="home__catalog-collaction-shtamp">
-							<a href="#" class="view view--princess view--black">
-								<span class="view__text">View collection</span>
-							</a>
+
+						<div class="home__catalog-collaction">
+							<div class="home__catalog-collaction-img" data-animation="slideInLeft"  data-delay=".3s" data-animation-out="slideOutLeft">
+								<img src="img/home/catalog-slider-5.jpg" alt="Vivi">
+							</div>
+							<div class="home__catalog-collaction-card" data-animation="slideInLeft"  data-delay="0s" data-animation-out="slideOutLeft">
+								<img src="img/home/catalog-slider-6.jpg" alt="Vivi">
+								<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
+								<span>$67</span>
+							</div>
+							<div class="home__catalog-collaction-shtamp hoja">
+								<a href="#" class="view view--princess view--black">
+									<span class="view__text">View collection</span>
+								</a>
+							</div>
 						</div>
+
+						
+
 					</div>
 				</div>
 				<div class="home__catalog-col-2">
 					<ul class="home__catalog-list">
-						<li><a href="#">Shorts</a></li>
-						<li><a href="#">School uniform</a></li>
-						<li><a class="active" href="#">Dresses</a></li>
-						<li><a href="#">Jeans</a></li>
-						<li><a href="#">Shorts </a></li>
+						<li><a>Shorts</a></li>
+						<li><a>School uniform</a></li>
+						<li><a>Dresses</a></li>
+						<li><a>Jeans</a></li>
+						<li><a>Shorts </a></li>
 					</ul>
 				</div>
 				<div class="home__catalog-col-3">
@@ -268,47 +445,63 @@
 	<section class="home__popular">
 		<div class="container">
 			<h2 class="home__popular-title">Most popular</h2>
-			<div class="home__popular-slider">
-				<div class="home__popular-card">
-					<img src="img/home/popular-1.jpg" alt="Vivi">
-					<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
-					<span>$67</span>
-					<a href="#" class="home__popular-card-like"></a>
+			<div class="home__popular-slider-wrap">
+
+				<div class="home__popular-slider-arrows">
+					<div class="slider-arrows">
+						<div class="slider-arrows__prev">
+							<span class="slider-arrows__prev-text">Prev</span>
+							<span class="slider-arrows__prev-arrow"></span>
+						</div>
+						<div class="slider-arrows__next">
+							<span class="slider-arrows__next-text">Next</span>
+							<span class="slider-arrows__next-arrow"></span>
+						</div>
+					</div>
 				</div>
 
-				<div class="home__popular-card">
-					<img src="img/home/popular-2.jpg" alt="Vivi">
-					<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
-					<span>$67</span>
-					<a href="#" class="home__popular-card-like"></a>
-				</div>
-
-				<div class="home__popular-card">
-					<img src="img/home/popular-3.jpg" alt="Vivi">
-					<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
-					<span>$67</span>
-					<a href="#" class="home__popular-card-like"></a>
-				</div>
-
-				<div class="home__popular-card">
-					<img src="img/home/popular-4.jpg" alt="Vivi">
-					<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
-					<span>$67</span>
-					<a href="#" class="home__popular-card-like"></a>
-				</div>
-
-				<div class="home__popular-card">
-					<img src="img/home/popular-2.jpg" alt="Vivi">
-					<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
-					<span>$67</span>
-					<a href="#" class="home__popular-card-like"></a>
+				<div class="home__popular-slider">
+					<div class="home__popular-card">
+						<img src="img/home/popular-1.jpg" alt="Vivi">
+						<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
+						<span>$67</span>
+						<a href="#" class="home__popular-card-like"></a>
+					</div>
+	
+					<div class="home__popular-card">
+						<img src="img/home/popular-2.jpg" alt="Vivi">
+						<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
+						<span>$67</span>
+						<a href="#" class="home__popular-card-like"></a>
+					</div>
+	
+					<div class="home__popular-card">
+						<img src="img/home/popular-3.jpg" alt="Vivi">
+						<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
+						<span>$67</span>
+						<a href="#" class="home__popular-card-like"></a>
+					</div>
+	
+					<div class="home__popular-card">
+						<img src="img/home/popular-4.jpg" alt="Vivi">
+						<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
+						<span>$67</span>
+						<a href="#" class="home__popular-card-like"></a>
+					</div>
+	
+					<div class="home__popular-card">
+						<img src="img/home/popular-2.jpg" alt="Vivi">
+						<h3><a href="#">Babydoll-Kleid mit Tupfenprint</a></h3>
+						<span>$67</span>
+						<a href="#" class="home__popular-card-like"></a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="home__video container">
 		<img src="img/home/video-img.jpg" alt="Vivi">
-		<a href="#" class="home__video-play">
+		<a href="#" class="home__video-play hoja">
 			<span>Play video</span>
 		</a>
 	</section>

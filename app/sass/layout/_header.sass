@@ -216,6 +216,7 @@
 .header-submenu
   position: absolute
   display: flex
+  display: none
   justify-content: space-between
   top: 72px
   left: 420px
@@ -235,6 +236,8 @@
   +media-sm 
     padding: 15px
     position: static
+.header-submenu.active 
+  display: flex !important
 
 .header-submenu__right
   width: 55%
