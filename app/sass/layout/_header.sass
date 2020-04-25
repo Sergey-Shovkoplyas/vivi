@@ -29,6 +29,7 @@
   display: none
   +media-sm 
     display: block
+    order: -1
 
 .header__row 
   position: relative
@@ -40,7 +41,13 @@
   width: 126px
   height: 63px
   +media-sm 
-    width: auto
+    width: 55px
+    height: auto
+    margin-left: -130px
+    img 
+      width: 100%
+  +media-374 
+    margin-left: -85px
 
 .header__nav 
   width: 590px
@@ -54,7 +61,7 @@
     display: none
     position: absolute
     z-index: 10
-    top: 73px
+    top: 48px
     left: 0
     right: 0
     width: auto
@@ -105,7 +112,9 @@
   +media-1920
     margin-right: 0px
   +media-sm 
-    width: 100px
+    width: 95px
+    a 
+      transform: scale(0.8)
 
 .header__bag
   position: relative
@@ -148,7 +157,7 @@
   padding-top: 158px
   padding-bottom: 20px
   +media-sm 
-    padding-top: 108px
+    padding-top: 60px
 
 .header__search-form 
   position: relative

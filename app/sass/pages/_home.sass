@@ -7,8 +7,8 @@
   +media-md 
     padding: 150px 0px 50px
   +media-sm
-    padding: 50px 0px 50px
-    margin-top: 84px
+    padding: 120px 0px 20px
+    margin-top: 58px
 
 .home__welcome-bg
   display: flex
@@ -30,6 +30,12 @@
     right: 0
     bottom: 0
     background-color: rgba(0, 0, 0, .4)
+  +media-sm 
+    img 
+      width: 400px
+  +media-374
+    img 
+      width: 417px
 
     
 
@@ -63,8 +69,9 @@
   +media-md 
     font-size: 70px
   +media-sm
-    margin-bottom: 20px
-    font-size: 36px
+    margin-bottom: 70px
+    font-size: 46px
+    text-align: center
 
 .home__welcome-text
   width: 284px
@@ -73,7 +80,9 @@
   font-size: 16px 
   line-height: 1.5
   +media-sm
-    margin-bottom: 40px
+    margin-bottom: 100px
+    text-align: center
+    width: auto
 
 .home__welcome-number
   position: relative
@@ -125,6 +134,9 @@
     width: 80px 
     height: 1px
     background-color: #fff
+  +media-sm
+    left: 50%
+    transform: translate(-50%, 0)
 
 
 .home__welcome-right
@@ -132,6 +144,7 @@
   width: 350px
   +media-sm 
     width: auto
+    display: none
 
 .home__welcome-view
   position: absolute
@@ -204,7 +217,7 @@
   margin-bottom: 50px
   margin-bottom: 43px
   +media-sm 
-    margin-bottom: 30px
+    margin-bottom: 80px
   
 
 .home__collections-text
@@ -218,6 +231,8 @@
   +media-md 
     text-align: center
     margin-bottom: 60px
+  +media-sm 
+    display: none
 
 .home__collections-slider
   position: relative
@@ -366,7 +381,7 @@
   +media-md 
     padding: 30px 60px
   +media-sm 
-    padding: 30px
+    padding: 80px 45px
 
 .home__boy-title 
   color: #fff 
@@ -376,6 +391,8 @@
   font-weight: 600
   +media-1920
     font-size: 40px
+  +media-sm 
+    font-size: 36px
 
 .home__boy-new 
   padding-bottom: 17px
@@ -401,20 +418,23 @@
     padding-right: 0px
   +media-sm 
     margin-bottom: 30px
+    text-align: center
 
 .home__boy-btn 
   width: 175px
+  +media-sm 
+    margin: 0 auto
 
 // ------------------------------ home__look ------------------------------
 .home__look 
   margin-bottom: 195px
   +media-sm 
-    margin-bottom: 70px
+    margin-bottom: 55px
 
 .home__look-title 
   margin-bottom: 102px
   +media-sm 
-    margin-bottom: 50px
+    margin-bottom: 65px
   
 .home__look-slider 
   margin-left: 130px
@@ -455,6 +475,9 @@
     transform: scale(1.05)
   +media-md 
     padding: 0
+  +media-sm 
+    img 
+      margin-bottom: 24px
 
 .home__look-btn 
   width: 175px
@@ -473,7 +496,8 @@
   +media-md 
     padding: 75px 0px 
   +media-sm 
-    margin-bottom: 70px
+    margin-bottom: 60px
+    padding: 50px 0px 
 
 .home__catalog-row 
   display: flex
@@ -489,9 +513,15 @@
   +media-lg
     width: 315px
 
+.home__catalog-col-2
+  +media-sm
+    order: -1
+
 .home__catalog-col-3
   +media-1920
     width: 360px
+  +media-sm
+    display: none
 
 .home__catalog-text 
   width: 460px
@@ -509,6 +539,7 @@
   +media-md 
     width: auto
   +media-sm 
+    display: none
     margin-bottom: 0px
 
 .home__catalog-text-title 
@@ -521,6 +552,8 @@
   position: relative
   padding-top: 125px
   padding-bottom: 120px
+  +media-sm 
+    padding-top: 45px
 
 .home__catalog-collaction-img 
   +media-lg
@@ -559,7 +592,7 @@
     transform: scale(0.7)
   +media-sm 
     right: -45px
-    top: 10px
+    top: -20px
     transform: scale(0.6)
 
 
@@ -592,9 +625,9 @@
   +media-sm 
     margin-top: 20px
     a
-      font-size: 27px
+      font-size: 36px
     li 
-      margin-bottom: 15px
+      margin-bottom: 30px
 
 
 
@@ -635,7 +668,7 @@
 .home__popular-title 
   margin-bottom: 94px
   +media-sm 
-    margin-bottom: 50px
+    margin-bottom: 65px
 
 
 .home__popular-slider 
