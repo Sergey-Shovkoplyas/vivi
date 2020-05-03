@@ -110,7 +110,8 @@ $(document).ready(function () {
 
 	// -------------------- header__search ---------------------
 
-	$('.header__search').on('click', function () {
+	$('.header__search').on('click', function (e) {
+		e.preventDefault();
 		$(this).removeClass('active');
 		$('.header__search-block').fadeIn();
 	});
@@ -219,7 +220,6 @@ $(document).ready(function () {
 	// -------------------- initialize products-card__sliders/cart-card__slider ---------------------
 
 	$('.products-card__slider, .cart-card__slider').each(function () {
-		console.log(this);
 		$(this).slick({
 			dots: false,
 			arrows: false,
@@ -257,6 +257,7 @@ $(document).ready(function () {
 		autoplay: false,
 		prevArrow: $('.home__welcome-prev'),
 		nextArrow: $('.home__welcome-next'),
+		infinite: false
 	});
 
 	// $('.home__welcome-slider').on('init', function (e, slick) {
@@ -271,12 +272,26 @@ $(document).ready(function () {
 		doAnimationsOut($animatingElementsOut);
 		doAnimations($animatingElements);
 
+		
+
 	});
 
 
 	// -------------------- initialize home__catalog-collaction-slider(animated) ------------------
 
 	$('.home__catalog-collaction-slider').slick({
+		swipe: false,
+		fade: true,
+		speed: 500,
+		arrows: false,
+		dots: false,
+		appendDots: $('.home__catalog-col-2'),
+		dotsClass: 'home__catalog-list',
+		asNavFor: '.home__catalog-collaction-slider-right'
+	});
+
+	$('.home__catalog-collaction-slider-right').slick({
+		swipe: false,
 		fade: true,
 		speed: 500,
 		arrows: false,
@@ -302,11 +317,15 @@ $(document).ready(function () {
 			$('.home__catalog-list li').on('click', function () {
 				let slideIndex = $(this).index();
 				$('.home__catalog-collaction-slider').slick('slickGoTo', slideIndex);
+				$(this).find('a').addClass('active');
+				$(this).parent('.home__catalog-list').find('li').not(this).find('a').removeClass('active');
 			});
 		} else {
 			$('.home__catalog-list li').on('mouseover', function () {
 				let slideIndex = $(this).index();
 				$('.home__catalog-collaction-slider').slick('slickGoTo', slideIndex);
+				$(this).find('a').addClass('active');
+				$(this).parent('.home__catalog-list').find('li').not(this).find('a').removeClass('active');
 			});
 		}
 
@@ -346,7 +365,26 @@ $(document).ready(function () {
 		});
 	}
 
+	// -------------------- filter on products page (open/close view more) ------------------
 
+	$('.filter__more').on('click', function(e){
+		e.preventDefault();
+		$(this).toggleClass('more');
+		$(this).prev('.filter__size-list').find('.filter__more-items').slideToggle();
+	});
+
+	// -------------------- filter range__slider ------------------
+
+	$('.filter__range').ionRangeSlider({
+		type: "double",
+		skin: "round",
+		min: 15,
+		max: 500,
+		from: 15,
+		to: 500,
+		postfix: ' RON',
+		hide_min_max: true
+	});
 
 
 
