@@ -1,5 +1,12 @@
 # Vivi
 
+Developer: Sergey Shovkoplyas 
+
+E-mail: shovkoplyassergey@gmail.com
+Skype: shovkoplyassergey_1
+Telegram: @SergShovk
+
+
 Pages
 - https://sergey-shovkoplyas.github.io/vivi/app/index.html
 - https://sergey-shovkoplyas.github.io/vivi/app/country.html
