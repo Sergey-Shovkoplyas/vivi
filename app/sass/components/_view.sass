@@ -9,18 +9,26 @@
   border-radius: 50%    
   transition: .3s
   &::after 
-    content: ''
+    content: 'Back to Black'
+    font-family: "Reenie Beanie"
+    font-style: normal
+    font-weight: 700
+    font-size: 75px
+    line-height: 75px
+    text-align: center
+    letter-spacing: -0.045em
+    color: #FF1267
+    transform: rotate(-7.22deg)
+    
     z-index: 1
     position: absolute
-    bottom: 50px
+    bottom: 35px
     left: -50px
     width: 356px
     height: 85px
-    background: url('../img/view-black.svg') no-repeat center
+    // background: url('../img/view-black.svg') no-repeat center
     background-size: contain
     
-// .view:hover 
-//   transform: scale(1.05)
 
 .view__text 
   position: relative
@@ -43,22 +51,29 @@
 
 .view.view--princess 
   &::after 
+    content: 'Princess Vivi'
+    color: #4F4FB6
     width: 253px
     left: -9px
-    background: url('../img/view-princess.svg') no-repeat center
+    // background: url('../img/view-princess.svg') no-repeat center
     background-size: contain
 
 .view.view--pyjamas 
-  &::after 
-    background: url('../img/view-pyjamas.svg') no-repeat center
+  &::after
+    content: 'pijamas pasrty' 
+    color: #51E7DE
+    // background: url('../img/view-pyjamas.svg') no-repeat center
 
 .view.view--summer 
   &::after 
-    background: url('../img/view-summer.svg') no-repeat center
+    content: 'Summer day' 
+    color: #F1B20F
+    // background: url('../img/view-summer.svg') no-repeat center
 
 .view.view--school
   &::after 
-    background: url('../img/view-school.svg') no-repeat center
+    content: 'Back to school' 
+    // background: url('../img/view-school.svg') no-repeat center
 
 
 .view.view--black 
@@ -67,3 +82,8 @@
     color: #000
     &::before
       background: url('../img/Line-black.svg') no-repeat center
+
+
+
+
+

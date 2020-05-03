@@ -5,7 +5,7 @@
   text-transform: uppercase
   cursor: pointer
   &:hover
-    text-shadow: 0px 0px 1px #000
+    text-shadow: 0px 0px 0.5px #000, 0px 0px 0.5px #000
 .filter-btn__text
   display: inline-block
   vertical-align: middle
@@ -63,7 +63,11 @@
     text-transform: uppercase
   a:hover,
   a.active 
-    text-shadow: 0px 0px 1px #000
+    text-shadow: 0px 0px 0.5px #000, 0px 0px 0.5px #000
+  +media-md 
+    padding-bottom: 80px
+  +media-sm
+    padding-bottom: 30px
 
 .filter__title 
   font-size: 20px
@@ -103,6 +107,12 @@
     background-color: #000
   &::before
     transform: translate(0, -50%) rotate(90deg)
+.filter__more.more
+  &::before
+    display: none
+.filter__more-items 
+  display: none
+
 
 .filter__color
   li
@@ -135,6 +145,7 @@
     background-color: #ECEBE9
   
 .filter__price-line 
+  // display: none
   position: relative
   width: 213px 
   height: 20px 
@@ -175,3 +186,36 @@
 
   .filter__price-right
     right: 0
+
+// --------------- filter__range ---------------------
+
+
+
+.filter__range-wrap
+  .irs--round
+    margin-top: -20px
+  .irs-from, 
+  .irs-to, 
+  .irs-single
+    top: 55px
+    cursor: pointer
+  .irs--round .irs-handle
+    width: 20px 
+    height: 20px
+    border-radius: 50%
+    background-color: #000
+    cursor: pointer
+    border: 2px solid #fff
+    box-shadow: none
+  .irs--round .irs-line
+    height: 1px
+  .irs--round .irs-bar
+    height: 1px
+    background-color: #000
+  .irs--round .irs-from, .irs--round .irs-to, .irs--round .irs-single
+    background-color: transparent 
+    color: #000
+    font-size: 14px
+    font-family: $font-sans
+  .irs--round .irs-from:before, .irs--round .irs-to:before, .irs--round .irs-single:before
+    display: none
