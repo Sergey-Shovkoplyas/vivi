@@ -139,6 +139,14 @@
     transform: translate(-50%, 0)
 
 
+.home__welcome
+  .slick-disabled 
+    opacity: .3
+    cursor: default
+    &:hover 
+      transform: scale(1)
+
+
 .home__welcome-right
   position: relative
   width: 350px
@@ -518,6 +526,7 @@
     order: -1
 
 .home__catalog-col-3
+  width: 570px
   +media-1920
     width: 360px
   +media-sm
@@ -527,7 +536,8 @@
   width: 460px
   margin-top: 18px
   margin-bottom: 45px
-  margin-left: 310px
+
+  padding-bottom: 125px
   p 
     margin: 0
     font-size: 14px
@@ -541,6 +551,7 @@
   +media-sm 
     display: none
     margin-bottom: 0px
+    padding-top: 45px
 
 .home__catalog-text-title 
   font-size: 14px 
@@ -550,10 +561,10 @@
 
 .home__catalog-collaction 
   position: relative
-  padding-top: 125px
   padding-bottom: 120px
   +media-sm 
     padding-top: 45px
+
 
 .home__catalog-collaction-img 
   +media-lg
@@ -582,17 +593,17 @@
 
 .home__catalog-collaction-shtamp 
   position: absolute
-  top: 0px
+  top: 125px
   right: 33px
   +media-1920 
     right: 0px
   +media-lg
     right: -35px
-    top: -28px
+    top: 134px
     transform: scale(0.7)
   +media-sm 
     right: -45px
-    top: -20px
+    top: 24px
     transform: scale(0.6)
 
 
@@ -614,8 +625,7 @@
     font-size: 45px
     color: rgba(0, 0, 0, .3)
     transition: .3s
-  a.active 
-    font-size: 55px 
+  a.active  
     color: rgba(0, 0, 0, 1)
   a:hover 
     color: rgba(0, 0, 0, 1)
@@ -634,7 +644,6 @@
 .home__catalog-card 
   width: 260px
   margin-bottom: 117px
-  margin-left: -150px
   text-align: center
   img 
     margin-bottom: 15px

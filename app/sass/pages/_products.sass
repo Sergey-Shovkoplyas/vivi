@@ -58,9 +58,11 @@
   position: relative
   padding: 0px 25px
   text-align: center
+  overflow: hidden
   img 
     margin-bottom: 15px
     width: 100%
+    transition: .3s
   video
     margin-bottom: 15px
   h3 
@@ -72,6 +74,9 @@
     font-weight: 700
   +media-md 
     padding: 0 15px
+  &:hover 
+    img 
+      transform: scale(1.05)
 
 .products-card-like 
   position: absolute
