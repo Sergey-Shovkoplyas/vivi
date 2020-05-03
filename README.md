@@ -1,10 +1,9 @@
 # Vivi
 
 Developer: Sergey Shovkoplyas 
-
-E-mail: shovkoplyassergey@gmail.com
-Skype: shovkoplyassergey_1
-Telegram: @SergShovk
+-E-mail: shovkoplyassergey@gmail.com
+-Skype: shovkoplyassergey_1
+-Telegram: @SergShovk
 
 
 Pages
