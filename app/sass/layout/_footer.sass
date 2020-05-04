@@ -123,11 +123,24 @@
   li 
     margin-bottom: 27px
   a
+    position: relative
+    display: inline-block
     font-size: 14px
     padding: 5px
     text-transform: uppercase
+  a::after 
+    position: absolute
+    width: 0
+    left: 0
+    bottom: 0
+    content: ''
+    height: 0.5px
+    background-color: #000
+    transition: .3s
   a:hover 
     text-shadow: 0px 0px 0.5px #000, 0px 0px 0.5px #000
+  a:hover::after 
+    width: 100%
   +media-sm 
     display: none
 
