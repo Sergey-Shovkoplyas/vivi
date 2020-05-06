@@ -128,17 +128,19 @@
     font-size: 14px
     padding: 5px
     text-transform: uppercase
-  a::after 
-    position: absolute
-    width: 0
-    left: 0
-    bottom: 0
-    content: ''
-    height: 0.5px
-    background-color: #000
-    transition: .3s
-  a:hover::after 
-    width: 100%
+  a:hover 
+    text-decoration: underline
+  // a::after 
+  //   position: absolute
+  //   width: 0
+  //   left: 0
+  //   bottom: 0
+  //   content: ''
+  //   height: 0.5px
+  //   background-color: #000
+  //   transition: .3s
+  // a:hover::after 
+  //   width: 100%
   +media-sm 
     display: none
 

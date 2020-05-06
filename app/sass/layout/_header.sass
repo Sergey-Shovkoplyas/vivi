@@ -84,19 +84,22 @@
     font-size: 14px 
     line-height: 1.2
     cursor: pointer
-  a::after 
-    position: absolute
-    width: 0%
-    left: 0
-    bottom: -3px
-    content: ''
-    height: 0.5px
-    background-color: #000
-    transition: .3s
+  // a::after 
+  //   position: absolute
+  //   width: 0%
+  //   left: 0
+  //   bottom: -3px
+  //   content: ''
+  //   height: 0.5px
+  //   background-color: #000
+  //   transition: .3s
   a.active 
     font-weight: 500
-  a:hover::after 
-    width: 100%
+    text-decoration: underline
+  a:hover 
+    text-decoration: underline
+  // a:hover::after 
+  //   width: 100%
   +media-md 
     a
       font-size: 13px
@@ -252,8 +255,6 @@
   box-shadow: 0px 8px 55px rgba(0, 0, 0, 0.25)
   a
     transition: none
-  a:hover
-    font-weight: 500
   a::after 
     display: none
   +media-1920 
@@ -289,11 +290,13 @@
     img 
       transform: scale(1.05)
 
-.header-submenu__img-text
-  position: absolute
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -50%)
+.header__nav-list
+  .header-submenu__img-text
+    display: block
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
 
 .header-submenu__img-number
   display: block
