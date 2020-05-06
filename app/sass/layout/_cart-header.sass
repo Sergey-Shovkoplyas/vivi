@@ -7,11 +7,16 @@
   width: 100%
   max-width: 640px
   padding: 0 35px  
+  +media-sm 
+    bottom: -37px 
+    padding-bottom: 30px
+    background-color: #fff
 
 .cart-header__stage
   position: relative
   width: 50%
   height: 1px
+  background-color: #ccc
 .cart-header__stage.active
   background-color: #000
 
@@ -40,6 +45,7 @@
       top: auto
       bottom: -20px
       font-size: 13px
+
 
   &--1
     left: -7.5px
