@@ -145,7 +145,44 @@
 
 .blog-detail__row-bottom
   margin-bottom: 177px
+  display: block
   +media-md 
     margin-bottom: 70px
   +media-sm
     margin-bottom: 50px
+
+
+
+// ----------- slider -----------------
+
+.blog-getail__slider--pagination
+  ul 
+    list-style: none 
+    padding: 0
+    margin: 0
+  button 
+    outline: none
+    border: none
+    background-color: #fff
+  li 
+    display: inline-block
+    margin-right: 6px
+    opacity: .3
+    &:last-child 
+      margin-right: 0px
+  li:hover 
+    opacity: 1
+  li.slick-active 
+    position: relative
+    padding-right: 36px
+    opacity: 1
+    cursor: default
+    &::after 
+      content: ''
+      position: absolute
+      top: 50%
+      right: 0
+      transform: translate(0, -50%)
+      width: 30px
+      height: 1px
+      background-color: #000
