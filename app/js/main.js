@@ -87,6 +87,30 @@ $(document).ready(function () {
 		]
 	});
 
+	$('.blog-getail__slider').slick({
+		slidesToShow: 3,
+		dots: true,
+		arrows: false,
+		appendDots: $('.blog-getail__slider--pagination'),
+		customPaging: function(slick,index) {
+			return '<button>' + '0' + (index + 1) + '</button>';
+		},
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+				}
+			}
+		]
+	});
+
 	// -------------------- footer mobile menu ---------------------
 
 	$(window).on('load', function () {

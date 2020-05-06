@@ -19,7 +19,7 @@
   padding-right: 30px 
   background: url('../img/cart/hart.svg') no-repeat center right
   a:hover 
-    text-shadow: 0 0 1px #000
+    text-decoration: underline
 
 .cart-2__row
   padding: 0 310px
@@ -54,8 +54,14 @@
 .cart-card__img 
   position: relative
   margin-bottom: 20px
+  overflow: hidden
   img 
     width: 100%
+    transition: .3s
+  &:hover 
+    img 
+      transform: scale(1.05)
+
 
 .cart-card__title 
   text-align: center
